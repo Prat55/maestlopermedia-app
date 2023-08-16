@@ -35,5 +35,8 @@ Route::group(['prefix' => 'admin'], function () {
 
         //* Posts Route for add,update and delete
         Route::post('/add', [AdminHomeController::class, 'store']);
+        Route::get('/edit-post/{id}', [AdminHomeController::class, 'editpost']);
+        Route::put('/update/{id}', [AdminHomeController::class, 'update']);
+        Route::delete('/delete/{id}', [AdminHomeController::class, 'destroy']);
     });
 });

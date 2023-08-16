@@ -13,7 +13,11 @@ class Post extends Model
         'title',
         'author',
         'media',
-        'serviceid',
-        'stypeid',
+        'service_id',
     ];
+
+    protected function service()
+    {
+        return $this->belongsTo(Service::class, 'service_id', 'id');
+    }
 }

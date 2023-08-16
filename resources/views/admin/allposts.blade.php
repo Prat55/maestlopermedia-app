@@ -45,12 +45,19 @@
                                                 class="dot-label bg-success me-2 w-2 h-2"></span>{{ $post->title }}</td>
                                         <td class="fs-13 text-success"><span
                                                 class="dot-label bg-success me-2 w-2 h-2"></span>{{ $post->author }}</td>
-                                        <td class="text-muted"></td>
+                                        <td class="text-muted">{{ $post->service->service }}</td>
                                         <td>
-                                            <span class="badge fs-11 bg-success-transparent text-success ms-2">Edit</span>
+                                            <a href="/admin/edit-post/{{ $post->id }}"
+                                                class="btn btn-outline-primary">Edit</a>
                                         </td>
                                         <td>
-                                            <span class="badge fs-11 bg-success-transparent text-success ms-2">Delete</span>
+                                            <form action="/admin/delete/{{ $post->id }}" method="POST">
+                                                @csrf
+                                                @method('delete')
+                                                <button type="submit" class="btn btn-outline-danger">
+                                                    Delete
+                                                </button>
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach
