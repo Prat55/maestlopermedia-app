@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
     <!-- Title -->
-    <title>Azea - PHP Admin & Dashboard Template</title>
+    <title>Maestloper Media | @yield('title')</title>
 
     <!--Favicon -->
     <link rel="icon" href="{{ asset('admin-assets/images/brand/favicon.ico') }}" type="image/x-icon">
@@ -37,10 +37,10 @@
     <link href="{{ asset('admin-assets/switcher/css/switcher.css') }}" rel="stylesheet">
     <link href="{{ asset('admin-assets/switcher/demo.css') }}" rel="stylesheet">
     <!-- INTERNAL Morris Charts css -->
-    <link href="{{ asset('admin-assets/plugins/morris/morris.css?v=1692028428') }}" rel="stylesheet">
+    <link href="{{ asset('admin-assets/plugins/morris/morris.css?v=1692175007') }}" rel="stylesheet">
 
     <!-- INTERNAL Select2 css -->
-    <link href="{{ asset('admin-assets/plugins/select2/select2.min.css?v=1692028428') }}" rel="stylesheet">
+    <link href="{{ asset('admin-assets/plugins/select2/select2.min.css?v=1692175007') }}" rel="stylesheet">
 
     <!-- Data table css -->
     <link href="{{ asset('admin-assets/plugins/datatables/DataTables/css/dataTables.bootstrap5.css') }}"
@@ -51,8 +51,12 @@
         rel="stylesheet">
 
     <!-- Color Skin css -->
-    <link id="theme" href="{{ asset('admin-assets/colors/color1-1.css?v=1692028428" rel="stylesheet') }}"
+    <link id="theme" href="{{ asset('admin-assets/colors/color1-1.css?v=1692175007') }}" rel="stylesheet"
         type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -85,7 +89,7 @@
 
     <!-- End Page -->
     <!-- Back to top -->
-    <a href="#top" id="back-to-top"><i class="fe fe-chevron-up"></i></a>
+    <a href="#top" id="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
     <!-- Jquery js-->
     <script src="{{ asset('admin-assets/js/jquery.min.js') }}"></script>
@@ -117,40 +121,37 @@
     <!-- Switcher js -->
     <script src="{{ asset('admin-assets/switcher/js/switcher.js') }}"></script>
     <!--INTERNAL Flot Charts js-->
-    <script src="{{ asset('admin-assets/plugins/flot/jquery.flot.js?v=1692028428') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/flot/jquery.flot.fillbetween.js?v=1692028428') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/flot/jquery.flot.pie.js?v=1692028428') }}"></script>
-    <script src="{{ asset('admin-assets/js/dashboard.sampledata.js?v=1692028428') }}"></script>
-    <script src="{{ asset('admin-assets/js/chart.flot.sampledata.js?v=1692028428') }}"></script>
+    <script src="{{ asset('admin-assets/plugins/flot/jquery.flot.js') }}"></script>
+    <script src="{{ asset('admin-assets/plugins/flot/jquery.flot.fillbetween.js') }}"></script>
+    <script src="{{ asset('admin-assets/plugins/flot/jquery.flot.pie.js') }}"></script>
+    <script src="{{ asset('admin-assets/js/dashboard.sampledata.js') }}"></script>
+    <script src="{{ asset('admin-assets/js/chart.flot.sampledata.js') }}"></script>
 
     <!-- INTERNAL Chart js -->
-    <script src="{{ asset('admin-assets/plugins/chart/chart.bundle.js?v=1692028428') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/chart/utils.js?v=1692028428') }}"></script>
+    <script src="{{ asset('admin-assets/plugins/chart/chart.bundle.js') }}"></script>
+    <script src="{{ asset('admin-assets/plugins/chart/utils.js') }}"></script>
 
     <!-- INTERNAL Apexchart js -->
-    <script src="{{ asset('admin-assets/js/apexcharts.js?v=1692028428') }}"></script>
+    <script src="{{ asset('admin-assets/js/apexcharts.js') }}"></script>
 
     <!--INTERNAL Moment js-->
-    <script src="{{ asset('admin-assets/plugins/moment/moment.js?v=1692028428') }}"></script>
+    <script src="{{ asset('admin-assets/plugins/moment/moment.js') }}"></script>
 
     <!--INTERNAL Index js-->
-    <script src="{{ asset('admin-assets/js/index1.js?v=1692028428') }}"></script>
+    <script src="{{ asset('admin-assets/js/index1.js') }}"></script>
 
     <!-- INTERNAL Data tables -->
-    <script src="{{ asset('admin-assets/plugins/datatables/DataTables/js/jquery.dataTables.js?v=1692028428') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/datatables/DataTables/js/dataTables.bootstrap5.js?v=1692028428') }}">
-    </script>
-    <script src="{{ asset('admin-assets/plugins/datatables/Responsive/js/dataTables.responsive.min.js?v=1692028428') }}">
-    </script>
-    <script src="{{ asset('admin-assets/plugins/datatables/Responsive/js/responsive.bootstrap5.min.js?v=1692028428') }}">
-    </script>
+    <script src="{{ asset('admin-assets/plugins/datatables/DataTables/js/jquery.dataTables.js') }}"></script>
+    <script src="{{ asset('admin-assets/plugins/datatables/DataTables/js/dataTables.bootstrap5.js') }}"></script>
+    <script src="{{ asset('admin-assets/plugins/datatables/Responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('admin-assets/plugins/datatables/Responsive/js/responsive.bootstrap5.min.js') }}"></script>
 
     <!-- INTERNAL Select2 js -->
-    <script src="{{ asset('admin-assets/plugins/select2/select2.full.min.js?v=1692028428') }}"></script>
-    <script src="{{ asset('admin-assets/js/select2.js?v=1692028428') }}"></script>
+    <script src="{{ asset('admin-assets/plugins/select2/select2.full.min.js') }}"></script>
+    <script src="{{ asset('admin-assets/js/select2.js') }}"></script>
 
     <!-- Rounded bar chart js-->
-    <script src="{{ asset('admin-assets/js/rounded-barchart.js?v=1692028428') }}"></script>
+    <script src="{{ asset('admin-assets/js/rounded-barchart.js') }}"></script>
 </body>
 
 </html>

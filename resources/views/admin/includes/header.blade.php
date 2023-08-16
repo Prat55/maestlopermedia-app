@@ -3,10 +3,14 @@
     <div class="container-fluid">
         <div class="d-flex">
             <a class="header-brand" href="index.php.html">
-                <img src="../assets/images/brand/logo.png" class="header-brand-img desktop-lgo" alt="Azea logo">
-                <img src="../assets/images/brand/logo1.png" class="header-brand-img dark-logo" alt="Azea logo">
-                <img src="../assets/images/brand/favicon.png" class="header-brand-img mobile-logo" alt="Azea logo">
-                <img src="../assets/images/brand/favicon1.png" class="header-brand-img darkmobile-logo" alt="Azea logo">
+                <img src="{{ asset('admin-assets/images/brand/logo.png') }}" class="header-brand-img desktop-lgo"
+                    alt="Azea logo">
+                <img src="{{ asset('admin-assets/images/brand/logo1.png') }}" class="header-brand-img dark-logo"
+                    alt="Azea logo">
+                <img src="{{ asset('admin-assets/images/brand/favicon.png') }}" class="header-brand-img mobile-logo"
+                    alt="Azea logo">
+                <img src="{{ asset('admin-assets/images/brand/favicon1.png') }}"
+                    class="header-brand-img darkmobile-logo" alt="Azea logo">
             </a>
             <div class="app-sidebar__toggle d-flex" data-bs-toggle="sidebar">
                 <a class="open-toggle" href="javascript:void(0);">
@@ -92,291 +96,24 @@
                                     </svg>
                                 </a>
                             </div>
-                            <div class="dropdown country-selector d-flex">
-                                <a href="javascript:void(0);" class="nav-link leading-none"
-                                    data-bs-toggle="dropdown">
-                                    <span class="header-avatar1">
-                                        <img src="../assets/images/us_flag.jpg" alt="img" class="me-2 country">
-                                        <span class="fs-14 font-weight-semibold"> English</span>
-                                    </span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow animated">
-                                    <a class="dropdown-item d-flex" href="profile-1.php.html">
-                                        <img src="../assets/images/germany_flag.jpg" alt="img"
-                                            class="me-2 country mt-1">
-                                        <span class="fs-13"> Germany</span>
-                                    </a>
-                                    <a class="dropdown-item d-flex" href="search.php.html">
-                                        <img src="../assets/images/italy_flag.jpg" alt="img"
-                                            class="me-2 country mt-1">
-                                        <span class="fs-13"> Italy</span>
-                                    </a>
-                                    <a class="dropdown-item d-flex" href="chat.php.html">
-                                        <img src="../assets/images/russia_flag.jpg" alt="img"
-                                            class="me-2 country mt-1">
-                                        <span class="fs-13"> Russia</span>
-                                    </a>
-                                    <a class="dropdown-item d-flex" href="login-1.php.html">
-                                        <img src="../assets/images/spain_flag.jpg" alt="img"
-                                            class=" me-2 country mt-1">
-                                        <span class="fs-13"> Spain</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="dropdown header-message d-flex">
-                                <a class="nav-link icon" data-bs-toggle="dropdown">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="header-icon" width="24"
-                                        height="24" viewbox="0 0 24 24">
-                                        <path
-                                            d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z">
-                                        </path>
-                                    </svg>
-                                    <span class="badge bg-success side-badge">5</span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow  animated">
-                                    <div class="dropdown-header">
-                                        <h6 class="mb-0">Messages</h6>
-                                        <span class="badge fs-10 bg-secondary br-7 ms-auto">New</span>
-                                    </div>
-                                    <div class="header-dropdown-list message-menu">
-                                        <a class="dropdown-item border-bottom" href="chat.php.html">
-                                            <div class="d-flex align-items-center">
-                                                <div class="">
-                                                    <span
-                                                        class="avatar avatar-md brround align-self-center cover-image"
-                                                        data-image-src="../assets/images/users/1.jpg"></span>
-                                                </div>
-                                                <div class="d-flex mt-1 mb-1">
-                                                    <div class="ps-3">
-                                                        <span class="mb-1 fs-13">Joan
-                                                            Powell</span>
-                                                        <p class="fs-12 mb-1">All the best your
-                                                            template awesome</p>
-                                                        <div class="fs-11 text-muted">
-                                                            3 hours ago
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item border-bottom" href="chat.php.html">
-                                            <div class="d-flex align-items-center">
-                                                <div class="">
-                                                    <span
-                                                        class="avatar avatar-md brround align-self-center cover-image"
-                                                        data-image-src="../assets/images/users/2.jpg"></span>
-                                                </div>
-                                                <div class="d-flex mt-1 mb-1">
-                                                    <div class="ps-3">
-                                                        <span class="mb-1 s-13">Gavin
-                                                            Sibson</span>
-                                                        <p class="fs-12 mb-1">Hey! there I'm
-                                                            available</p>
-                                                        <div class="fs-11 text-muted">
-                                                            5 hour ago
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item border-bottom" href="chat.php.html">
-                                            <div class="d-flex align-items-center">
-                                                <div class="">
-                                                    <span
-                                                        class="avatar avatar-md brround align-self-center cover-image"
-                                                        data-image-src="../assets/images/users/3.jpg"></span>
-                                                </div>
-                                                <div class="d-flex mt-1 mb-1">
-                                                    <div class="ps-3">
-                                                        <span class="mb-1">Julian Kerr</span>
-                                                        <p class="fs-12 mb-1">Just created a new
-                                                            blog post</p>
-                                                        <div class="fs-11 text-muted">
-                                                            45 mintues ago
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item border-bottom" href="chat.php.html">
-                                            <div class="d-flex align-items-center">
-                                                <div class="">
-                                                    <span
-                                                        class="avatar avatar-md brround align-self-center cover-image"
-                                                        data-image-src="../assets/images/users/4.jpg"></span>
-                                                </div>
-                                                <div class="d-flex mt-1 mb-1">
-                                                    <div class="ps-3">
-                                                        <span class=" fs-13 mb-1">Cedric
-                                                            Kelly</span>
-                                                        <p class="fs-12 mb-1">Added new comment on
-                                                            your photo</p>
-                                                        <div class="fs-11 text-muted">
-                                                            2 days ago
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item border-bottom" href="chat.php.html">
-                                            <div class="d-flex align-items-center">
-                                                <div class="">
-                                                    <span
-                                                        class="avatar avatar-md brround align-self-center cover-image"
-                                                        data-image-src="../assets/images/users/6.jpg"></span>
-                                                </div>
-                                                <div class="d-flex mt-1 mb-1">
-                                                    <div class="ps-3">
-                                                        <span class="mb-1 fs-13">Julian
-                                                            Kerr</span>
-                                                        <p class="fs-12 mb-1">Your payment invoice
-                                                            is generated</p>
-                                                        <div class="fs-11 text-muted">
-                                                            3 days ago
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item" href="chat.php.html">
-                                            <div class="d-flex align-items-center">
-                                                <div class="">
-                                                    <span
-                                                        class="avatar avatar-md brround align-self-center cover-image"
-                                                        data-image-src="../assets/images/users/7.jpg"></span>
-                                                </div>
-                                                <div class="d-flex mt-1 mb-1">
-                                                    <div class="ps-3">
-                                                        <span class="mb-1 fs-13">Faith
-                                                            Dickens</span>
-                                                        <p class="fs-12 mb-1">Please check your
-                                                            mail....</p>
-                                                        <div class="fs-11 text-muted">
-                                                            4 days ago
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class=" text-center p-2 pt-3 border-top">
-                                        <a href="chat.php.html" class="fs-13 btn btn-primary btn-md btn-block">See
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="dropdown header-notify d-flex">
-                                <a class="nav-link icon" data-bs-toggle="dropdown">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="header-icon" width="24"
-                                        height="24" viewbox="0 0 24 24">
-                                        <path
-                                            d="M19 13.586V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v3.586l-1.707 1.707A.996.996 0 0 0 3 16v2a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2a.996.996 0 0 0-.293-.707L19 13.586zM19 17H5v-.586l1.707-1.707A.996.996 0 0 0 7 14v-4c0-2.757 2.243-5 5-5s5 2.243 5 5v4c0 .266.105.52.293.707L19 16.414V17zm-7 5a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22z">
-                                        </path>
-                                    </svg><span class="pulse "></span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow  animated">
-                                    <div class="dropdown-header">
-                                        <h6 class="mb-0">Notifications</h6>
-                                        <span class="badge fs-10 bg-secondary br-7 ms-auto">New</span>
-                                    </div>
-                                    <div class="notify-menu">
-                                        <a href="email-inbox.php.html"
-                                            class="dropdown-item border-bottom d-flex ps-4">
-                                            <div class="notifyimg  text-primary bg-primary-transparent border-primary">
-                                                <i class="fa fa-envelope"></i>
-                                            </div>
-                                            <div>
-                                                <span class="fs-13">Message Sent.</span>
-                                                <div class="small text-muted">3 hours ago</div>
-                                            </div>
-                                        </a>
-                                        <a href="email-inbox.php.html"
-                                            class="dropdown-item border-bottom d-flex ps-4">
-                                            <div
-                                                class="notifyimg  text-secondary bg-secondary-transparent border-secondary">
-                                                <i class="fa fa-shopping-cart"></i>
-                                            </div>
-                                            <div>
-                                                <span class="fs-13">Order Placed</span>
-                                                <div class="small text-muted">5 hour ago</div>
-                                            </div>
-                                        </a>
-                                        <a href="email-inbox.php.html"
-                                            class="dropdown-item border-bottom d-flex ps-4">
-                                            <div class="notifyimg  text-danger bg-danger-transparent border-danger">
-                                                <i class="fa fa-gift"></i>
-                                            </div>
-                                            <div>
-                                                <span class="fs-13">Event Started</span>
-                                                <div class="small text-muted">45 mintues ago</div>
-                                            </div>
-                                        </a>
-                                        <a href="email-inbox.php.html"
-                                            class="dropdown-item border-bottom d-flex ps-4 mb-2">
-                                            <div
-                                                class="notifyimg  text-success  bg-success-transparent border-success">
-                                                <i class="fa fa-windows"></i>
-                                            </div>
-                                            <div>
-                                                <span class="fs-13">Your Admin lanuched</span>
-                                                <div class="small text-muted">1 daya ago</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class=" text-center p-2">
-                                        <a href="email-inbox.php.html"
-                                            class="btn btn-primary btn-md fs-13 btn-block">View
-                                            All</a>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="dropdown profile-dropdown d-flex">
                                 <a href="javascript:void(0);" class="nav-link pe-0 leading-none"
                                     data-bs-toggle="dropdown">
                                     <span class="header-avatar1">
-                                        <img src="../assets/images/users/2.jpg" alt="img"
+                                        <img src="{{ asset('admin-assets/images/users/2.jpg') }}" alt="img"
                                             class="avatar avatar-md brround">
                                     </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow animated">
                                     <div class="text-center">
                                         <div class="text-center user pb-0 font-weight-bold">
-                                            Patrenna</div>
-                                        <span class="text-center user-semi-title">Web
-                                            Designer</span>
+                                            {{ Auth::guard('admin')->user()->name }}</div>
+                                        <span
+                                            class="text-center user-semi-title">{{ Auth::guard('admin')->user()->email }}</span>
                                         <div class="dropdown-divider"></div>
                                     </div>
-                                    <a class="dropdown-item d-flex" href="profile-1.php.html">
-                                        <svg class="header-icon me-2" xmlns="http://www.w3.org/2000/svg"
-                                            height="24" viewbox="0 0 24 24" width="24">
-                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
-                                            <path
-                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z">
-                                            </path>
-                                        </svg>
-                                        <div class="fs-13">Profile</div>
-                                    </a>
-                                    <a class="dropdown-item d-flex" href="search.php.html">
-                                        <svg class="header-icon me-2" xmlns="http://www.w3.org/2000/svg"
-                                            height="24" viewbox="0 0 24 24" width="24">
-                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
-                                            <path
-                                                d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.09-.16-.26-.25-.44-.25-.06 0-.12.01-.17.03l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.06-.02-.12-.03-.18-.03-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.09.16.26.25.44.25.06 0 .12-.01.17-.03l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z">
-                                            </path>
-                                        </svg>
-                                        <div class="fs-13">Settings</div>
-                                    </a>
-                                    <a class="dropdown-item d-flex" href="chat.php.html">
-                                        <svg class="header-icon me-2" xmlns="http://www.w3.org/2000/svg"
-                                            height="24" viewbox="0 0 24 24" width="24">
-                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
-                                            <path
-                                                d="M4 4h16v12H5.17L4 17.17V4m0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H4zm2 10h12v2H6v-2zm0-3h12v2H6V9zm0-3h12v2H6V6z">
-                                            </path>
-                                        </svg>
-                                        <div class="fs-13">Messages</div>
-                                    </a>
-                                    <a class="dropdown-item d-flex" href="login-1.php.html">
+                                    <a class="dropdown-item d-flex" href="{{ route('logout') }}">
                                         <svg class="header-icon me-2" xmlns="http://www.w3.org/2000/svg"
                                             enable-background="new 0 0 24 24" height="24" viewbox="0 0 24 24"
                                             width="24">
@@ -395,19 +132,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="d-flex">
-                    <a class="nav-link icon demo-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="header-icon fa-spin" width="24"
-                            height="24" viewbox="0 0 24 24">
-                            <path
-                                d="M12 16c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.084 0 2 .916 2 2s-.916 2-2 2-2-.916-2-2 .916-2 2-2z">
-                            </path>
-                            <path
-                                d="m2.845 16.136 1 1.73c.531.917 1.809 1.261 2.73.73l.529-.306A8.1 8.1 0 0 0 9 19.402V20c0 1.103.897 2 2 2h2c1.103 0 2-.897 2-2v-.598a8.132 8.132 0 0 0 1.896-1.111l.529.306c.923.53 2.198.188 2.731-.731l.999-1.729a2.001 2.001 0 0 0-.731-2.732l-.505-.292a7.718 7.718 0 0 0 0-2.224l.505-.292a2.002 2.002 0 0 0 .731-2.732l-.999-1.729c-.531-.92-1.808-1.265-2.731-.732l-.529.306A8.1 8.1 0 0 0 15 4.598V4c0-1.103-.897-2-2-2h-2c-1.103 0-2 .897-2 2v.598a8.132 8.132 0 0 0-1.896 1.111l-.529-.306c-.924-.531-2.2-.187-2.731.732l-.999 1.729a2.001 2.001 0 0 0 .731 2.732l.505.292a7.683 7.683 0 0 0 0 2.223l-.505.292a2.003 2.003 0 0 0-.731 2.733zm3.326-2.758A5.703 5.703 0 0 1 6 12c0-.462.058-.926.17-1.378a.999.999 0 0 0-.47-1.108l-1.123-.65.998-1.729 1.145.662a.997.997 0 0 0 1.188-.142 6.071 6.071 0 0 1 2.384-1.399A1 1 0 0 0 11 5.3V4h2v1.3a1 1 0 0 0 .708.956 6.083 6.083 0 0 1 2.384 1.399.999.999 0 0 0 1.188.142l1.144-.661 1 1.729-1.124.649a1 1 0 0 0-.47 1.108c.112.452.17.916.17 1.378 0 .461-.058.925-.171 1.378a1 1 0 0 0 .471 1.108l1.123.649-.998 1.729-1.145-.661a.996.996 0 0 0-1.188.142 6.071 6.071 0 0 1-2.384 1.399A1 1 0 0 0 13 18.7l.002 1.3H11v-1.3a1 1 0 0 0-.708-.956 6.083 6.083 0 0 1-2.384-1.399.992.992 0 0 0-1.188-.141l-1.144.662-1-1.729 1.124-.651a1 1 0 0 0 .471-1.108z">
-                            </path>
-                        </svg>
-                    </a>
                 </div>
             </div>
         </div>

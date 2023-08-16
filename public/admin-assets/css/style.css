@@ -1123,6 +1123,17 @@ h2.animate {
 }
 
 /*------ Scroll -------*/
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background: #f0efef;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 45px;
+    background: #d5d5d5;
+}
+
 .index1 {
     height: 270px;
 }
@@ -31785,7 +31796,7 @@ a.text-dark:focus {
     }
 
     abbr[title]::after {
-        content: " ("attr(title) ")";
+        content: " (" attr(title) ")";
     }
 
     pre {

@@ -1,12 +1,12 @@
 @extends('admin.includes.app')
-
+@section('title', 'Dashboard')
 @section('content')
     <!--Page header-->
     <div class="page-header">
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">Dashboard</h4>
         </div>
-        <div class="page-rightheader">
+        {{-- <div class="page-rightheader">
             <div class="btn-list">
                 <button class="btn btn-outline-primary"><i class="fe fe-download me-2"></i>
                     Import</button>
@@ -23,7 +23,7 @@
                     <a class="dropdown-item" href="javascript:void(0);">Last year</a>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
     <!--End Page header-->
 
@@ -37,7 +37,7 @@
                             <div class="">
                                 <span class="fs-14 font-weight-normal">Total Sales</span>
                                 <h2 class="mb-2 number-font carn1 font-weight-bold">3,257</h2>
-                                <span class=""><i class="fe fe-arrow-up-circle"></i> 76% <span
+                                <span class=""><i class="fa fa-circle-arrow-up"></i> 76% <span
                                         class="ms-1 fs-11">Growth This Month</span>
                                 </span>
                             </div>
@@ -59,7 +59,7 @@
                             <div class="">
                                 <span class="fs-14">Total Stats</span>
                                 <h2 class="mb-2 mt-1 number-font carn2 font-weight-bold">1,678</h2>
-                                <span class=""><i class="fe fe-arrow-down-circle"></i> 15%
+                                <span class=""><i class="fa fa-circle-arrow-down"></i> 15%
                                     <span class="ms-1 fs-11">Loss This Month</span>
                                 </span>
                             </div>
@@ -81,7 +81,7 @@
                             <div class="">
                                 <span class="fs-14">Total Income</span>
                                 <h2 class="mb-2 mt-1 number-font carn2 font-weight-bold">$2,590</h2>
-                                <span class=""><i class="fe fe-arrow-up-circle"></i> 62% <span class="ms-1 fs-11">From
+                                <span class=""><i class="fa fa-circle-arrow-up"></i> 62% <span class="ms-1 fs-11">From
                                         Last Month</span>
                                 </span>
                             </div>
@@ -103,7 +103,7 @@
                             <div class="text-justify">
                                 <span>Total Tax</span>
                                 <h2 class="mb-2 mt-1 number-font carn2 font-weight-bold">$1,954</h2>
-                                <span class=""><i class="fe fe-arrow-up-circle"></i> 53% <span class="ms-1 fs-11">From
+                                <span class=""><i class="fa fa-circle-arrow-up"></i> 53% <span class="ms-1 fs-11">From
                                         Last Month</span>
                                 </span>
                             </div>

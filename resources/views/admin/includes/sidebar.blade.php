@@ -2,17 +2,21 @@
 <aside class="app-sidebar">
     <div class="app-sidebar__logo">
         <a class="header-brand" href="index.php.html">
-            <img src="../assets/images/brand/logo.png" class="header-brand-img desktop-lgo" alt="Azea logo">
-            <img src="../assets/images/brand/logo1.png" class="header-brand-img dark-logo" alt="Azea logo">
-            <img src="../assets/images/brand/favicon.png" class="header-brand-img mobile-logo" alt="Azea logo">
-            <img src="../assets/images/brand/favicon1.png" class="header-brand-img darkmobile-logo" alt="Azea logo">
+            <img src="{{ asset('admin-assets/images/brand/logo.png') }}" class="header-brand-img desktop-lgo"
+                alt="Azea logo">
+            <img src="{{ asset('admin-assets/images/brand/logo1.png') }}" class="header-brand-img dark-logo"
+                alt="Azea logo">
+            <img src="{{ asset('admin-assets/images/brand/favicon.png') }}" class="header-brand-img mobile-logo"
+                alt="Azea logo">
+            <img src="{{ asset('admin-assets/images/brand/favicon1.png') }}" class="header-brand-img darkmobile-logo"
+                alt="Azea logo">
         </a>
     </div>
 
     <ul class="side-menu app-sidebar3">
         <li class="side-item side-item-category">Main</li>
         <li class="slide">
-            <a class="side-menu__item" href="index.php.html">
+            <a class="side-menu__item" href="{{ route('dashboard') }}">
                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="24" height="24"
                     viewbox="0 0 24 24">
                     <path
@@ -21,140 +25,30 @@
                 </svg>
                 <span class="side-menu__label">Dashboard</span></a>
         </li>
-        <li class="side-item side-item-category">Components</li>
+        <li class="side-item side-item-category">Posts</li>
+
         <li class="slide">
-            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);">
-                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="24" height="24"
-                    viewbox="0 0 24 24">
-                    <path
-                        d="M12 22c4.879 0 9-4.121 9-9s-4.121-9-9-9-9 4.121-9 9 4.121 9 9 9zm0-16c3.794 0 7 3.206 7 7s-3.206 7-7 7-7-3.206-7-7 3.206-7 7-7zm5.284-2.293 1.412-1.416 3.01 3-1.413 1.417zM5.282 2.294 6.7 3.706l-2.99 3-1.417-1.413z">
-                    </path>
-                    <path d="M11 9h2v5h-2zm0 6h2v2h-2z"></path>
-                </svg>
-                <span class="side-menu__label">Utilities</span><i class="angle fe fe-chevron-right"></i></a>
-            <ul class="slide-menu">
-                <li><a href="elements-border.php.html" class="slide-item"> Border</a></li>
-                <li><a href="element-colors.php.html" class="slide-item"> Colors</a></li>
-                <li><a href="elements-display.php.html" class="slide-item"> Display</a></li>
-                <li><a href="element-flex.php.html" class="slide-item"> Flex Items</a></li>
-                <li><a href="element-height.php.html" class="slide-item"> Height</a></li>
-                <li><a href="elements-margin.php.html" class="slide-item"> Margin</a></li>
-                <li><a href="elements-paddning.php.html" class="slide-item"> Padding</a></li>
-                <li><a href="element-typography.php.html" class="slide-item"> Typhography</a></li>
-                <li><a href="element-width.php.html" class="slide-item"> Width</a></li>
-            </ul>
-        </li>
-        <li class="slide">
-            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);">
+            <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('allposts') }}">
                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="24" height="24"
                     viewbox="0 0 24 24">
                     <path
                         d="M20 17V7c0-2.168-3.663-4-8-4S4 4.832 4 7v10c0 2.168 3.663 4 8 4s8-1.832 8-4zM12 5c3.691 0 5.931 1.507 6 1.994C17.931 7.493 15.691 9 12 9S6.069 7.493 6 7.006C6.069 6.507 8.309 5 12 5zM6 9.607C7.479 10.454 9.637 11 12 11s4.521-.546 6-1.393v2.387c-.069.499-2.309 2.006-6 2.006s-5.931-1.507-6-2V9.607zM6 17v-2.393C7.479 15.454 9.637 16 12 16s4.521-.546 6-1.393v2.387c-.069.499-2.309 2.006-6 2.006s-5.931-1.507-6-2z">
                     </path>
                 </svg>
-                <span class="side-menu__label">Elements</span><i class="angle fe fe-chevron-right"></i></a>
-            <ul class="slide-menu">
-                <li><a href="accordion.php.html" class="slide-item"> Accordion</a></li>
-                <li><a href="alerts.php.html" class="slide-item"> Alerts</a></li>
-                <li><a href="avatars.php.html" class="slide-item"> Avatars</a></li>
-                <li><a href="badge.php.html" class="slide-item"> Badges</a></li>
-                <li><a href="breadcrumbs.php.html" class="slide-item"> Breadcrumb</a></li>
-                <li><a href="buttons.php.html" class="slide-item"> Buttons</a></li>
-                <li><a href="cards.php.html" class="slide-item"> Cards</a></li>
-                <li><a href="cards-image.php.html" class="slide-item"> Card Images</a></li>
-                <li><a href="carousel.php.html" class="slide-item"> Carousel</a></li>
-                <li><a href="dropdown.php.html" class="slide-item"> Dropdown</a></li>
-                <li><a href="footers.php.html" class="slide-item"> Footers</a></li>
-                <li><a href="list.php.html" class="slide-item"> List Group</a></li>
-                <li><a href="media-object.php.html" class="slide-item"> Media Obejct</a></li>
-                <li><a href="modal.php.html" class="slide-item"> Modal</a></li>
-                <li><a href="navigation.php.html" class="slide-item"> Navigation</a></li>
-                <li><a href="pagination.php.html" class="slide-item"> Pagination</a></li>
-                <li><a href="panels.php.html" class="slide-item"> Panel</a></li>
-                <li><a href="popover.php.html" class="slide-item"> Popover</a></li>
-                <li><a href="progress.php.html" class="slide-item"> Progress</a></li>
-                <li><a href="tabs.php.html" class="slide-item"> Tabs</a></li>
-                <li><a href="tags.php.html" class="slide-item"> Tags</a></li>
-                <li><a href="tooltip.php.html" class="slide-item"> Tooltips</a></li>
-            </ul>
+                <span class="side-menu__label">All posts</span>
+            </a>
+
         </li>
         <li class="slide">
-            <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);">
+            <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('addpost') }}">
                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="24" height="24"
                     viewbox="0 0 24 24">
                     <path
                         d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm11-6h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6h-4V5h4v4zm-9 4H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6H5v-4h4v4zm8-6c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z">
                     </path>
                 </svg>
-                <span class="side-menu__label">Apps</span><i class="angle fe fe-chevron-right"></i></a>
-            <ul class="slide-menu ">
-                <li class="sub-slide">
-                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
-                            class="sub-side-menu__label">Chat</span><i class="sub-angle fe fe-chevron-right"></i></a>
-                    <ul class="sub-slide-menu">
-                        <li><a class="sub-slide-item" href="chat.php.html">Chat 01</a></li>
-                        <li><a class="sub-slide-item" href="chat2.php.html">Chat 02</a></li>
-
-                    </ul>
-                </li>
-                <li class="sub-slide">
-                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
-                            class="sub-side-menu__label">Contact</span><i
-                            class="sub-angle fe fe-chevron-right"></i></a>
-                    <ul class="sub-slide-menu">
-                        <li><a class="sub-slide-item" href="contact-list.php.html">Contact list 01</a>
-                        </li>
-                        <li><a class="sub-slide-item" href="contact-list2.php.html">Contact list 02</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="calendar.php.html" class="slide-item"> Calendar</a></li>
-                <li><a href="cookies.php.html" class="slide-item"> Cookies</a></li>
-                <li><a href="counters.php.html" class="slide-item"> Counters</a></li>
-                <li><a href="dragula.php.html" class="slide-item"> Dragula Card</a></li>
-                <li class="sub-slide">
-                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
-                            class="sub-side-menu__label">File
-                            Manager</span><i class="sub-angle fe fe-chevron-right"></i></a>
-                    <ul class="sub-slide-menu">
-                        <li><a class="sub-slide-item" href="file-manager.php.html">File Manager 01</a>
-                        </li>
-                        <li><a class="sub-slide-item" href="file-manager-list.php.html">File Manager
-                                02</a></li>
-                    </ul>
-                </li>
-                <li><a href="image-comparison.php.html" class="slide-item"> Image Comparison</a></li>
-                <li><a href="img-crop.php.html" class="slide-item"> Image Crop</a></li>
-                <li><a href="loaders.php.html" class="slide-item"> Loaders</a></li>
-                <li><a href="notify.php.html" class="slide-item"> Notifications</a></li>
-                <li><a href="page-sessiontimeout.php.html" class="slide-item"> Page-sessiontimeout</a>
-                </li>
-                <li><a href="rangeslider.php.html" class="slide-item"> Range slider</a></li>
-                <li><a href="rating.php.html" class="slide-item"> Rating</a></li>
-                <li><a href="sweetalert.php.html" class="slide-item"> Sweet alerts</a></li>
-                <li class="sub-slide">
-                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
-                            class="sub-side-menu__label">Todo List</span><i
-                            class="sub-angle fe fe-chevron-right"></i></a>
-                    <ul class="sub-slide-menu">
-                        <li><a class="sub-slide-item" href="todo-list.php.html">Todo List 01</a></li>
-                        <li><a class="sub-slide-item" href="todo-list2.php.html">Todo List 02</a></li>
-                        <li><a class="sub-slide-item" href="todo-list3.php.html">Todo List 03</a></li>
-                    </ul>
-                </li>
-                <li><a href="time-line.php.html" class="slide-item"> Time Line</a></li>
-                <li class="sub-slide">
-                    <a class="sub-side-menu__item" data-bs-toggle="sub-slide" href="javascript:void(0);"><span
-                            class="sub-side-menu__label">User List</span><i
-                            class="sub-angle fe fe-chevron-right"></i></a>
-                    <ul class="sub-slide-menu">
-                        <li><a class="sub-slide-item" href="users-list-1.php.html">User List 01</a></li>
-
-                        <li><a class="sub-slide-item" href="users-list-3.php.html">User List 03</a></li>
-
-                    </ul>
-                </li>
-            </ul>
+                <span class="side-menu__label">Add Post</span>
+            </a>
         </li>
         <li class="side-item side-item-category">Tables & Icons </li>
         <li class="slide">
@@ -165,7 +59,7 @@
                         d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm0 2 .001 4H5V5h14zM5 11h8v8H5v-8zm10 8v-8h4.001l.001 8H15z">
                     </path>
                 </svg>
-                <span class="side-menu__label">Tables</span><i class="angle fe fe-chevron-right"></i></a>
+                <span class="side-menu__label">Tables</span><i class="fa-solid fa-chevron-right"></i></a>
             <ul class="slide-menu">
                 <li><a href="tables.php.html" class="slide-item">Default table</a></li>
                 <li><a href="datatable.php.html" class="slide-item">Data Table</a></li>

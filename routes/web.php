@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\admin\AdminHomeController;
+use App\Http\Controllers\admin\AdminLoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,5 +16,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('admin.dashboard');
+    return view('welcome');
+});
+
+Route::group(['prefix' => 'admin'], function () {
+
+    Route::group(['middleware' => 'admin.guest'], function () {
+        Route::get('/', [AdminLoginController::class, 'login'])->name('login');
+        Route::get('/login', [AdminLoginController::class, 'index'])->name('login');
+        Route::post('/authenticate', [AdminLoginController::class, 'authenticate'])->name('authenticate');
+    });
+
+    Route::group(['middleware' => 'admin.auth'], function () {
+        Route::get('/dashboard', [AdminHomeController::class, 'index'])->name('dashboard');
+        Route::get('/all-posts', [AdminHomeController::class, 'allposts'])->name('allposts');
+        Route::get('/logout', [AdminHomeController::class, 'logout'])->name('logout');
+        Route::get('/addpost', [AdminHomeController::class, 'addpost'])->name('addpost');
+
+        //* Posts Route for add,update and delete
+        Route::post('/add', [AdminHomeController::class, 'store']);
+    });
 });
