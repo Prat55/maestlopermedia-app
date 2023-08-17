@@ -41,7 +41,7 @@
                                     <a href="/">Home</a>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="services.html">services</a>
+                                    <a href="{{ route('services')}}">services</a>
                                     <!-- <ul>
                                     <li><a href="services.html">Popular Services</a></li>
                                     <li>
@@ -67,7 +67,7 @@
                                 <li class="">
                                     <a href="{{ route('about') }}">About Us</a>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="{{ route('contact')}}">Contact</a></li>
                                 <button type="button" class="btn btn-outline-danger get-quote">
                                     <a href="tel:+91 8149972219">Get Quote</a>
                                 </button>

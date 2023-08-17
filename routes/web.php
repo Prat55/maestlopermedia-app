@@ -22,6 +22,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [UserHomeController::class, 'index']);
 Route::get('/about', [UserHomeController::class, 'about'])->name('about');
+Route::get('/services', [UserHomeController::class, 'services'])->name('services');
+Route::get('/contact', [UserHomeController::class, 'contact'])->name('contact');
 
 Route::group(['prefix' => 'admin'], function () {
 

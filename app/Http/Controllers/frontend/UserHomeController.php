@@ -15,4 +15,12 @@ class UserHomeController extends Controller
     protected function about(){
         return view('frontend.about');
     }
+
+    protected function services(){
+        return view('frontend.services');
+    }
+
+    protected function contact(){
+        return view('frontend.contact');
+    }
 }
