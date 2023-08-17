@@ -119,7 +119,10 @@
                         </div>
                         <div class="contact-info-item style-two">
                             <div class="icon">
-                                <i class="fa-regular fa-envelope"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 512 512" fill="#fff">
+                                    <path
+                                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                </svg>
                             </div>
                             <div class="content">
                                 <span class="title">email address</span>
@@ -132,7 +135,11 @@
                         </div>
                         <div class="contact-info-item style-two">
                             <div class="icon">
-                                <i class="fa-solid fa-phone-flip"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 512 512"
+                                    fill="#fff">
+                                    <path
+                                        d="M347.1 24.6c7.7-18.6 28-28.5 47.4-23.2l88 24C499.9 30.2 512 46 512 64c0 247.4-200.6 448-448 448c-18 0-33.8-12.1-38.6-29.5l-24-88c-5.3-19.4 4.6-39.7 23.2-47.4l96-40c16.3-6.8 35.2-2.1 46.3 11.6L207.3 368c70.4-33.3 127.4-90.3 160.7-160.7L318.7 167c-13.7-11.2-18.4-30-11.6-46.3l40-96z" />
+                                </svg>
                             </div>
                             <div class="content">
                                 <span class="title">Phone Number</span>
@@ -193,84 +200,4 @@
         </div>
     </section>
     <!-- Call to Action Area End -->
-
-    <!-- footer area start -->
-    <footer class="main-footer footer-two pt-80 bgc-lighter">
-        <div class="container">
-            <div class="row justify-content-xl-between justify-content-center">
-                <div class="col-xl-4 col-lg-5 col-md-6">
-                    <div class="footer-widget widget_about me-md-5 wow fadeInUp delay-0-2s">
-                        <div class="footer-logo mb-25">
-                            <a href="index.html"><img style="height: 70px" src="assets/images/logos/logomm.png"
-                                    alt="Logo" /></a>
-                        </div>
-                        <p>
-                            Maestloper Media is a full-service digital marketing agency
-                            founded with a vision to revolutionize the online marketing
-                            landscape. We pride ourselves on delivering exceptional
-                            results through innovative strategies, creative designs, and
-                            advanced technology.
-                        </p>
-                        <div class="social-style-two pt-5">
-                            <a href="https://m.facebook.com/people/maestloper_media/100064850406182/"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/maestloper_media/?hl=en"><i
-                                    class="fab fa-instagram"></i></a>
-                            <a href="https://in.linkedin.com/company/maestloper-media"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="footer-widget widget_nav_menu wow fadeInUp delay-0-4s">
-                        <h4 class="footer-title">Quick Links</h4>
-                        <ul class="list-style-two">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-8">
-                    <div class="wow fadeInUp delay-0-6s">
-                        <h4 class="footer-title">Contact</h4>
-                        <li class="list-item-1">
-                            <a class="text-decoration-none">Address: Office No.23, Ostwal Wonder City, Betegao
-                                Boisar(E) 401501,Palghar, MH</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="mailto:info@maestlopermedia.com" class="text-decoration-none">Email:
-                                info@maestlopermedia.com</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="callto:+91 8149972219" class="text-decoration-none footer-link-auto">Phone: +91
-                                8149972219</a>
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom mt-30 pt-25 pb-10">
-            <div class="container">
-                <div class="copyright-text text-center">
-                    <p>Copyright ©2023 Maestloper Media All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer area end -->
-
-    <!-- Scroll Top Button -->
-    <button class="scroll-top scroll-to-target" data-target="html">
-        <span class="fas fa-angle-double-up"></span>
-    </button>
-
-    <a href="https://wa.me/8149972219" class="waicon" target="_blank">
-        <img height="40px" src="./assets/images/logos/whatsapp.png" alt="">
-    </a>
-    </div>
-    <!-- footer area end -->
-    <!--End pagewrapper-->
 @endsection

@@ -541,12 +541,14 @@
                     </div>
                     <div class="testimonial-content">
                         <p>
-                            "Maestloper Media has a deep understanding of our industry and
-                            has helped us establish a strong online presence."
+                            "Working with Maestloper Media was a game-changer for our
+                            production needs. Their professionalism, expertise, and
+                            dedication resulted in a top-notch final product that truly
+                            impressed our team."
                         </p>
                         <div class="author-description">
                             <span class="h5">Adarsh Jadhav </span>
-                            <span class="designation">Founder Of ACS Insights</span>
+                            <span class="designation">Managing Director At Rang Marathi</span>
                         </div>
                     </div>
                 </div>
