@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\admin\AdminHomeController;
 use App\Http\Controllers\admin\AdminLoginController;
+use App\Http\Controllers\frontend\UserHomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,14 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [UserHomeController::class, 'index']);
+Route::get('/about', [UserHomeController::class, 'about'])->name('about');
 
 Route::group(['prefix' => 'admin'], function () {
 
     Route::group(['middleware' => 'admin.guest'], function () {
-        Route::get('/', [AdminLoginController::class, 'login'])->name('login');
+        Route::get('/', [AdminLoginController::class, 'index'])->name('login');
         Route::get('/login', [AdminLoginController::class, 'index'])->name('login');
         Route::post('/authenticate', [AdminLoginController::class, 'authenticate'])->name('authenticate');
     });
