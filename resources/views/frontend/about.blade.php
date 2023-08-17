@@ -18,16 +18,16 @@
             </div>
         </div>
         <!-- <div class="banner-shapes">
-                <div class="circle wow zoomInLeft delay-0-2s" data-wow-duration="2s"></div>
-                <img class="shape-one" src="assets/images/shapes/hero-shape1.png" alt="Shape" />
-                <img class="shape-two" src="assets/images/shapes/hero-shape2.png" alt="Shape" />
-              </div>
-              <div class="slider-shapes">
-                <img class="shape dots one" src="assets/images/shapes/slider-dots.png" alt="Shape" />
-                <img class="shape dots two" src="assets/images/shapes/slider-dots.png" alt="Shape" />
-                <img class="shape wave-line" src="assets/images/shapes/slider-wave-line.png" alt="Shape" />
-                <img class="shape circle" src="assets/images/shapes/slider-circle.png" alt="Shape" />
-              </div> -->
+                                <div class="circle wow zoomInLeft delay-0-2s" data-wow-duration="2s"></div>
+                                <img class="shape-one" src="assets/images/shapes/hero-shape1.png" alt="Shape" />
+                                <img class="shape-two" src="assets/images/shapes/hero-shape2.png" alt="Shape" />
+                              </div>
+                              <div class="slider-shapes">
+                                <img class="shape dots one" src="assets/images/shapes/slider-dots.png" alt="Shape" />
+                                <img class="shape dots two" src="assets/images/shapes/slider-dots.png" alt="Shape" />
+                                <img class="shape wave-line" src="assets/images/shapes/slider-wave-line.png" alt="Shape" />
+                                <img class="shape circle" src="assets/images/shapes/slider-circle.png" alt="Shape" />
+                              </div> -->
     </section>
     <!-- Page Banner End -->
 
@@ -73,11 +73,11 @@
                             </div>
                         </div>
                         <!-- <div class="ww-do-btns">
-                        <a href="about.html" class="theme-btn mt-15">Create Your Website
-                          <i class="fas fa-angle-double-right"></i></a>
-                        <a href="https://www.youtube.com/watch?v=9Y7ma241N8k" class="mfp-iframe video-play-text mt-15"><i
-                            class="fas fa-play"></i> <span>Watch Videos</span></a>
-                      </div> -->
+                                        <a href="about.html" class="theme-btn mt-15">Create Your Website
+                                          <i class="fas fa-angle-double-right"></i></a>
+                                        <a href="https://www.youtube.com/watch?v=9Y7ma241N8k" class="mfp-iframe video-play-text mt-15"><i
+                                            class="fas fa-play"></i> <span>Watch Videos</span></a>
+                                      </div> -->
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -180,11 +180,11 @@
     <!-- Video Area End -->
 
     <!-- Call to Action Area start -->
-    <section class="call-to-action-area bgc-black pt-80 pb-50">
+    <section class="call-to-action-area bgc-white pt-150 pb-50">
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-xl-7 col-lg-9">
-                    <div class="section-title text-white mb-25 wow fadeInUp delay-0-2s">
+                    <div class="section-title text-black mb-25 wow fadeInUp delay-0-2s">
                         <h2>Let’s Build Your Brand Today</h2>
                         <p>
                             Do you want to have a Digital Services that stands out and
@@ -194,8 +194,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 text-lg-end">
-                    <a href="contact.html" class="theme-btn style-two mb-30 wow fadeInUp delay-0-4s">Let’s Get Started <i
-                            class="fas fa-angle-double-right"></i></a>
+                    <a href="contact.html" class="theme-btn style-one mb-30 wow fadeInUp delay-0-4s">Let’s Get Started
+                        <i class="fas fa-angle-double-right"></i></a>
                 </div>
             </div>
         </div>

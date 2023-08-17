@@ -50,6 +50,14 @@
 
                             <div class="col-md-12">
                                 <div class="form-group">
+                                    <label class="form-label">Link<span class="text-red">*</span></label>
+                                    <input type="url" class="form-control" name="link" value="{{ $posts->link }}"
+                                        placeholder="Link of post" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
                                     <label class="form-label">Service Type<span class="text-red">*</span></label>
                                     <input type="text" class="form-control" value="{{ $posts->service->service }}"
                                         readonly>

@@ -152,6 +152,8 @@
 
     <!-- Rounded bar chart js-->
     <script src="{{ asset('admin-assets/js/rounded-barchart.js') }}"></script>
+
+    @yield('customJs')
 </body>
 
 </html>

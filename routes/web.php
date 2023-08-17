@@ -3,6 +3,7 @@
 use App\Http\Controllers\admin\AdminHomeController;
 use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\frontend\UserHomeController;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,7 @@ Route::get('/', [UserHomeController::class, 'index']);
 Route::get('/about', [UserHomeController::class, 'about'])->name('about');
 Route::get('/services', [UserHomeController::class, 'services'])->name('services');
 Route::get('/contact', [UserHomeController::class, 'contact'])->name('contact');
+Route::get('/portfolio', [UserHomeController::class, 'portfolio'])->name('portfolio');
 
 Route::group(['prefix' => 'admin'], function () {
 
@@ -44,5 +46,19 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/edit-post/{id}', [AdminHomeController::class, 'editpost']);
         Route::put('/update/{id}', [AdminHomeController::class, 'update']);
         Route::delete('/delete/{id}', [AdminHomeController::class, 'destroy']);
+
+
+        Route::get('/getSlug', function (Request $request) {
+
+            $slug = '';
+            if (!empty($request->service)) {
+                $slug = Str::slug($request->service);
+            }
+
+            return response()->json([
+                'status' => true,
+                'slug' => $slug,
+            ]);
+        })->name('getSlug');
     });
 });

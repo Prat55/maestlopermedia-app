@@ -14,6 +14,7 @@ class Post extends Model
         'author',
         'media',
         'service_id',
+        'link',
     ];
 
     protected function service()

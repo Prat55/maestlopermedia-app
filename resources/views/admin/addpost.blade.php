@@ -39,9 +39,18 @@
                                     <input type="file" class="form-control" name="media" required>
                                 </div>
                             </div>
+
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-label">Country <span class="text-red">*</span></label>
+                                    <label class="form-label">Link<span class="text-red">*</span></label>
+                                    <input type="url" class="form-control" name="link" placeholder="Link of post"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Service Type <span class="text-red">*</span></label>
                                     <select name="service" class="form-control custom-select select2" required>
                                         <option value="0">--Select Service--</option>
                                         @foreach ($services as $se)
