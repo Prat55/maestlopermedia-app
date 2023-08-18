@@ -3,14 +3,14 @@
     <div class="container-fluid">
         <div class="d-flex">
             <a class="header-brand" href="index.php.html">
-                <img src="{{ asset('admin-assets/images/brand/logo.png') }}" class="header-brand-img desktop-lgo"
-                    alt="Azea logo">
-                <img src="{{ asset('admin-assets/images/brand/logo1.png') }}" class="header-brand-img dark-logo"
-                    alt="Azea logo">
-                <img src="{{ asset('admin-assets/images/brand/favicon.png') }}" class="header-brand-img mobile-logo"
-                    alt="Azea logo">
-                <img src="{{ asset('admin-assets/images/brand/favicon1.png') }}"
-                    class="header-brand-img darkmobile-logo" alt="Azea logo">
+                <img src="{{ asset('user-assets/images/logos/logomm.png') }}" class="header-brand-img desktop-lgo"
+                    alt="Maestloper Media">
+                <img src="{{ asset('user-assets/images/logos/Logo-1 (1).png') }}" class="header-brand-img dark-logo"
+                    alt="Maestloper Media">
+                <img src="{{ asset('user-assets/images/logos/favicon.png') }}" class="header-brand-img mobile-logo"
+                    alt="Maestloper Media">
+                <img src="{{ asset('user-assets/images/logos/favicon.png') }}"
+                    class="header-brand-img darkmobile-logo" alt="Maestloper Media">
             </a>
             <div class="app-sidebar__toggle d-flex" data-bs-toggle="sidebar">
                 <a class="open-toggle" href="javascript:void(0);">
@@ -41,7 +41,7 @@
                 <button class="navbar-toggler navresponsive-toggler d-md-none ms-auto" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4"
                     aria-controls="navbarSupportedContent-4" aria-expanded="true" aria-label="Toggle navigation">
-                    <i class="fe fe-more-vertical header-icons navbar-toggler-icon"></i>
+                    <i class="fa-solid fa-ellipsis-vertical fa-rotate-90" style="color: #adadad;"></i>
                 </button>
                 <div class="navbar navbar-expand-lg navbar-collapse responsive-navbar p-0">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent-4">

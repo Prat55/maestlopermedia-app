@@ -9,7 +9,7 @@
     <title>Maestloper Media | Login</title>
 
     <!--Favicon -->
-    <link rel="icon" href="{{ asset('admin-assets/images/brand/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('user-assets/images/logos/favicon.png') }}" type="image/x-icon">
 
     <!--Bootstrap css -->
     <link id="style" href="{{ asset('admin-assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -83,8 +83,8 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="text-center mb-5">
-                                        <img src="{{ asset('admin-assets/images/brand/logo1.png') }}"
-                                            class="header-brand-img desktop-lgo" alt="Azea logo">
+                                        <img src="{{ asset('user-assets/images/logos/logomm.png') }}"
+                                           height="150px" width="200px" class="header-brand-img desktop-lgo" alt="Azea logo">
                                     </div>
 
                                     <div class="card">
