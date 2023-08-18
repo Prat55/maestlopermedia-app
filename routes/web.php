@@ -4,8 +4,7 @@ use App\Http\Controllers\admin\AdminHomeController;
 use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\admin\AdminServiceController;
 use App\Http\Controllers\frontend\UserHomeController;
-use Illuminate\Http\Request as HttpRequest;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,14 +43,14 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/addpost', [AdminHomeController::class, 'addpost'])->name('addpost');
         Route::get('/addservice', [AdminServiceController::class, 'index'])->name('addservice');
 
-        //* Posts Route for add,update and delete
+        //* Posts CRUD Route
         Route::post('/add', [AdminHomeController::class, 'store']);
         Route::get('/edit-post/{id}', [AdminHomeController::class, 'editpost']);
         Route::put('/update/{id}', [AdminHomeController::class, 'update']);
         Route::delete('/delete/{id}', [AdminHomeController::class, 'destroy']);
 
-
-        Route::get('/getSlug', function (HttpRequest $request) {
+        // * This is for auto slug generator
+        Route::get('/getSlug', function (Request $request) {
 
             $slug = '';
             if (!empty($request->title)) {
@@ -63,5 +62,11 @@ Route::group(['prefix' => 'admin'], function () {
                 'slug' => $slug,
             ]);
         })->name('getSlug');
+
+        // * Service CRUD Routes
+        Route::post('/add-service', [AdminServiceController::class, 'store']);
+        Route::get('/edit-service/{id}', [AdminServiceController::class, 'editservice']);
+        Route::put('/update-service/{id}', [AdminServiceController::class, 'update']);
+        Route::delete('/delete-service/{id}', [AdminServiceController::class, 'destroy']);
     });
 });

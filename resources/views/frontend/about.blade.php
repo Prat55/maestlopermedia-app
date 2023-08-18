@@ -11,23 +11,23 @@
                 </h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center wow fadeInUp delay-0-4s">
-                        <li class="breadcrumb-item"><a href="index.html">home</a></li>
+                        <li class="breadcrumb-item"><a href="/">home</a></li>
                         <li class="breadcrumb-item active">About Us</li>
                     </ol>
                 </nav>
             </div>
         </div>
         <!-- <div class="banner-shapes">
-                                <div class="circle wow zoomInLeft delay-0-2s" data-wow-duration="2s"></div>
-                                <img class="shape-one" src="assets/images/shapes/hero-shape1.png" alt="Shape" />
-                                <img class="shape-two" src="assets/images/shapes/hero-shape2.png" alt="Shape" />
-                              </div>
-                              <div class="slider-shapes">
-                                <img class="shape dots one" src="assets/images/shapes/slider-dots.png" alt="Shape" />
-                                <img class="shape dots two" src="assets/images/shapes/slider-dots.png" alt="Shape" />
-                                <img class="shape wave-line" src="assets/images/shapes/slider-wave-line.png" alt="Shape" />
-                                <img class="shape circle" src="assets/images/shapes/slider-circle.png" alt="Shape" />
-                              </div> -->
+                                        <div class="circle wow zoomInLeft delay-0-2s" data-wow-duration="2s"></div>
+                                        <img class="shape-one" src="assets/images/shapes/hero-shape1.png" alt="Shape" />
+                                        <img class="shape-two" src="assets/images/shapes/hero-shape2.png" alt="Shape" />
+                                      </div>
+                                      <div class="slider-shapes">
+                                        <img class="shape dots one" src="assets/images/shapes/slider-dots.png" alt="Shape" />
+                                        <img class="shape dots two" src="assets/images/shapes/slider-dots.png" alt="Shape" />
+                                        <img class="shape wave-line" src="assets/images/shapes/slider-wave-line.png" alt="Shape" />
+                                        <img class="shape circle" src="assets/images/shapes/slider-circle.png" alt="Shape" />
+                                      </div> -->
     </section>
     <!-- Page Banner End -->
 
@@ -73,11 +73,11 @@
                             </div>
                         </div>
                         <!-- <div class="ww-do-btns">
-                                        <a href="about.html" class="theme-btn mt-15">Create Your Website
-                                          <i class="fas fa-angle-double-right"></i></a>
-                                        <a href="https://www.youtube.com/watch?v=9Y7ma241N8k" class="mfp-iframe video-play-text mt-15"><i
-                                            class="fas fa-play"></i> <span>Watch Videos</span></a>
-                                      </div> -->
+                                                <a href="about.html" class="theme-btn mt-15">Create Your Website
+                                                  <i class="fas fa-angle-double-right"></i></a>
+                                                <a href="https://www.youtube.com/watch?v=9Y7ma241N8k" class="mfp-iframe video-play-text mt-15"><i
+                                                    class="fas fa-play"></i> <span>Watch Videos</span></a>
+                                              </div> -->
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -194,7 +194,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 text-lg-end">
-                    <a href="contact.html" class="theme-btn style-one mb-30 wow fadeInUp delay-0-4s">Let’s Get Started
+                    <a href="{{ route('contact') }}" class="theme-btn style-one mb-30 wow fadeInUp delay-0-4s">Let’s Get
+                        Started
                         <i class="fas fa-angle-double-right"></i></a>
                 </div>
             </div>

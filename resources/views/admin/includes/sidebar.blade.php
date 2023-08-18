@@ -50,6 +50,8 @@
                 <span class="side-menu__label">Add Post</span>
             </a>
         </li>
+
+        <li class="side-item side-item-category">Services</li>
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('addservice') }}">
                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="24" height="24"

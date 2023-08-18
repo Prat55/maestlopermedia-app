@@ -60,7 +60,7 @@
                     <div class="col-xl-4 col-lg-5 col-md-6">
                         <div class="footer-widget widget_about me-md-5 wow fadeInUp delay-0-2s">
                             <div class="footer-logo mb-25">
-                                <a href="index.html"><img style="height: 70px"
+                                <a href="/"><img style="height: 70px"
                                         src="{{ asset('user-assets/images/logos/logomm.png') }}" alt="Logo" /></a>
                             </div>
                             <p>
@@ -84,10 +84,10 @@
                         <div class="footer-widget widget_nav_menu wow fadeInUp delay-0-4s">
                             <h4 class="footer-title">Quick Links</h4>
                             <ul class="list-style-two">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="{{ route('about') }}">About Us</a></li>
+                                <li><a href="{{ route('services') }}">Services</a></li>
+                                <li><a href="{{ route('contact') }}">Contact Us</a></li>
 
                             </ul>
                         </div>

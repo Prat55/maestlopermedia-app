@@ -4,13 +4,15 @@ namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Post;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class UserHomeController extends Controller
 {
     protected function index()
     {
-        return view('frontend.home');
+        $posts = Post::latest()->take(10)->get();
+        return view('frontend.home')->with('posts', $posts);
     }
 
     protected function about()
@@ -26,7 +28,8 @@ class UserHomeController extends Controller
     protected function portfolio()
     {
         $posts = Post::all();
-        return view('frontend.portfolio')->with('posts', $posts);
+        $services = Service::all();
+        return view('frontend.portfolio')->with('posts', $posts)->with('services', $services);
     }
 
     protected function contact()

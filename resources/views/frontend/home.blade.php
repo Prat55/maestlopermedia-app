@@ -11,9 +11,9 @@
                         <span class="sub-title">WE ARE MAESTLOPER MEDIA</span>
                         <h1>Top-tier for Marketing Solutions</h1>
                         <div class="slider-btns">
-                            <a href="contact.html" class="theme-btn">Get Started Us <i
+                            <a href="{{ route('contact') }}" class="theme-btn">Get Started Us <i
                                     class="fas fa-angle-double-right"></i></a>
-                            <a href="services.html" class="theme-btn style-three">Explore Services <i
+                            <a href="{{ route('services') }}" class="theme-btn style-three">Explore Services <i
                                     class="fas fa-angle-double-right"></i></a>
                         </div>
                     </div>
@@ -34,9 +34,9 @@
                         <span class="sub-title">WE ARE MAESTLOPER MEDIA</span>
                         <h1>Crafting Web Design Solutions</h1>
                         <div class="slider-btns">
-                            <a href="contact.html" class="theme-btn">Get Started Us <i
+                            <a href="{{ route('contact') }}" class="theme-btn">Get Started Us <i
                                     class="fas fa-angle-double-right"></i></a>
-                            <a href="services.html" class="theme-btn style-three">Explore Services <i
+                            <a href="{{ route('services') }}" class="theme-btn style-three">Explore Services <i
                                     class="fas fa-angle-double-right"></i></a>
                         </div>
                     </div>
@@ -57,9 +57,9 @@
                         <span class="sub-title">WE ARE MAESTLOPER MEDIA</span>
                         <h1>Archive of Innovative Graphic Designs</h1>
                         <div class="slider-btns">
-                            <a href="contact.html" class="theme-btn">Get Started Us <i
+                            <a href="{{ route('contact') }}" class="theme-btn">Get Started Us <i
                                     class="fas fa-angle-double-right"></i></a>
-                            <a href="services.html" class="theme-btn style-three">Explore Services <i
+                            <a href="{{ route('services') }}" class="theme-btn style-three">Explore Services <i
                                     class="fas fa-angle-double-right"></i></a>
                         </div>
                     </div>
@@ -167,9 +167,9 @@
                                     <div class="icon"><i class="flaticon-design"></i></div>
                                     <div class="content">
                                         <h4>
-                                            <a href="services.html#graphic">Graphic Designing</a>
+                                            <a href="{{ route('services') }}#graphic">Graphic Designing</a>
                                         </h4>
-                                        <a class="more-btn" href="services.html#graphic"><i
+                                        <a class="more-btn" href="{{ route('services') }}#graphic"><i
                                                 class="fal fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -179,9 +179,9 @@
                                     <div class="icon"><i class="flaticon-web-page"></i></div>
                                     <div class="content">
                                         <h4>
-                                            <a href="services.html#digital">Digital Marketing</a>
+                                            <a href="{{ route('services') }}#digital">Digital Marketing</a>
                                         </h4>
-                                        <a class="more-btn" href="services.html#digital"><i
+                                        <a class="more-btn" href="{{ route('services') }}#digital"><i
                                                 class="fal fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -201,9 +201,9 @@
                                     <div class="icon"><i class="flaticon-online"></i></div>
                                     <div class="content">
                                         <h4>
-                                            <a href="services.html#software">Software Development</a>
+                                            <a href="{{ route('services') }}#software">Software Development</a>
                                         </h4>
-                                        <a class="more-btn" href="services.html#software"><i
+                                        <a class="more-btn" href="{{ route('services') }}#software"><i
                                                 class="fal fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -215,9 +215,9 @@
                                     </div>
                                     <div class="content">
                                         <h4>
-                                            <a href="services.html#website">Website Designing</a>
+                                            <a href="{{ route('services') }}#website">Website Designing</a>
                                         </h4>
-                                        <a class="more-btn" href="services.html#website"><i
+                                        <a class="more-btn" href="{{ route('services') }}#website"><i
                                                 class="fal fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -235,9 +235,9 @@
                                     </div>
                                     <div class="content">
                                         <h4>
-                                            <a href="services.html#social">Social Media Marketing</a>
+                                            <a href="{{ route('services') }}#social">Social Media Marketing</a>
                                         </h4>
-                                        <a class="more-btn" href="services.html#social"><i
+                                        <a class="more-btn" href="{{ route('services') }}#social"><i
                                                 class="fal fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -249,9 +249,9 @@
                                     </div>
                                     <div class="content">
                                         <h4>
-                                            <a href="services.html#production">Production</a>
+                                            <a href="{{ route('services') }}#production">Production</a>
                                         </h4>
-                                        <a class="more-btn" href="services.html#production"><i
+                                        <a class="more-btn" href="{{ route('services') }}#production"><i
                                                 class="fal fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -337,7 +337,7 @@
             </div>
         </div>
         <div class="project-three-active">
-            <div class="project-item style-two wow fadeInUp delay-0-2s">
+            {{-- <div class="project-item style-two wow fadeInUp delay-0-2s">
                 <div class="project-iamge">
                     <img src="{{ asset('user-assets/myimages/services/img4.png') }}" alt="Project" />
                     <div class="project-over">
@@ -396,22 +396,23 @@
                     </h4>
                     <span class="category">Design Responsive</span>
                 </div>
-            </div>
-            <div class="project-item style-two wow fadeInUp delay-0-8s">
-                <div class="project-iamge">
-                    <img src="{{ asset('user-assets/myimages/services/img1.png') }}" alt="Project" />
-                    <div class="project-over">
-                        <a class="details-btn" href="https://capitolinefinance.site/"><i
-                                class="far fa-arrow-right"></i></a>
+            </div> --}}
+            @foreach ($posts as $post)
+                <div class="project-item style-two wow fadeInUp delay-0-8s">
+                    <div class="project-iamge">
+                        <img src="/posts/{{ $post->media }}" alt="Project" height="267px" width="401px" />
+                        <div class="project-over">
+                            <a class="details-btn" href="{{ $post->link }}"><i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h4>
+                            <a href="{{ $post->link }}" target="_blank">{{ $post->title }}</a>
+                        </h4>
+                        <span class="category">{{ $post->service->service }}</span>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h4>
-                        <a href="https://capitolinefinance.site/" target="_blank">Capitoline Finance</a>
-                    </h4>
-                    <span class="category">Design Responsive</span>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
     <!-- Project Area end -->
@@ -481,14 +482,14 @@
                         <div class="cta-item wow fadeInLeft delay-0-2s">
                             <div class="icon"><i class="flaticon-target"></i></div>
                             <h4>Have any Project On Minds ?</h4>
-                            <a href="contact.html" class="details-btn"><i class="far fa-arrow-right"></i></a>
+                            <a href="{{ route('contact') }}" class="details-btn"><i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-xl-6">
                         <div class="cta-item wow fadeInRight delay-0-2s">
                             <div class="icon"><i class="flaticon-target"></i></div>
                             <h4>We Provide Digital Services</h4>
-                            <a href="contact.html" class="details-btn"><i class="far fa-arrow-right"></i></a>
+                            <a href="{{ route('contact') }}" class="details-btn"><i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

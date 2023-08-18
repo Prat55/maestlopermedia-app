@@ -11,7 +11,7 @@
                 </h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center wow fadeInUp delay-0-4s">
-                        <li class="breadcrumb-item"><a href="index.html">home</a></li>
+                        <li class="breadcrumb-item"><a href="/">home</a></li>
                         <li class="breadcrumb-item active">Services</li>
                     </ol>
                 </nav>
@@ -207,8 +207,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 text-lg-end">
-                    <a href="contact.html" class="theme-btn style-two mb-30 wow fadeInUp delay-0-4s">Let’s Get Started <i
-                            class="fas fa-angle-double-right"></i></a>
+                    <a href="{{ route('contact') }}" class="theme-btn style-two mb-30 wow fadeInUp delay-0-4s">Let’s Get
+                        Started <i class="fas fa-angle-double-right"></i></a>
                 </div>
             </div>
         </div>

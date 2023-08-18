@@ -10,7 +10,7 @@
     <title>Maestloper Media | @yield('title')</title>
 
     <!--Favicon -->
-    <link rel="icon" href="{{ asset('admin-assets/images/brand/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('user-assets/images/logos/favicon.png') }}" type="image/x-icon">
 
     <!--Bootstrap css -->
     <link id="style" href="{{ asset('admin-assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -91,8 +91,8 @@
     <!-- Back to top -->
     <a href="#top" id="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    @yield('customJs')
 
+    @yield('customJs')
     <!-- Jquery js-->
     <script src="{{ asset('admin-assets/js/jquery.min.js') }}"></script>
 

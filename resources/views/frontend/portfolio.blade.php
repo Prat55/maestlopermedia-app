@@ -33,17 +33,21 @@
                 <div class="col-xl-6 text-xl-end">
                     <ul class="project-filter filter-btns-one d-inline-flex mb-30 wow fadeInUp delay-0-4s">
                         <li data-filter="*" class="current">All</li>
-                        <li data-filter=".business">Business</li>
+
+                        @foreach ($services as $serv)
+                            <li data-filter=".{{ $serv->slug }}">{{ $serv->service }}</li>
+                        @endforeach
+                        {{-- <li data-filter=".business">Business</li>
                         <li data-filter=".saas">Saas</li>
                         <li data-filter=".medical">Medical</li>
                         <li data-filter=".construction">Construction</li>
-                        <li data-filter=".education">Education</li>
+                        <li data-filter=".education">Education</li> --}}
                     </ul>
                 </div>
             </div>
             <div class="row project-active justify-content-center">
                 @foreach ($posts as $post)
-                    <div class="col-xl-4 col-md-6 item saas construction">
+                    <div class="col-xl-4 col-md-6 item {{ $post->service->slug }}">
                         <div class="project-item style-two wow fadeInUp delay-0-2s">
                             <div class="project-iamge">
                                 <img src="/posts/{{ $post->media }}" alt="Project" height="270px" width="410px" />

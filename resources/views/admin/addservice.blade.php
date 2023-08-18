@@ -16,52 +16,70 @@
                     <h3 class="card-title">Add New Service</h3>
                 </div>
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2>Add Service Type</h2>
-                                </div>
-                                <div class="card-body">
-                                    <form action="/admin/add-service" name="categoryForm" id="categoryForm" method="post"
-                                        enctype="multipart/form-data">
-                                        @csrf
-                                        <input type="text" name="service" id="name" class="form-control m-2"
-                                            placeholder="Enter Service Name" required>
+                    <form action="/admin/add-service" name="categoryForm" id="categoryForm" method="post"
+                        enctype="multipart/form-data">
+                        @csrf
+                        <input type="text" name="service" id="name" value="" class="form-control m-2"
+                            placeholder="Enter Service Name" required>
 
-                                        <input type="text" name="slug" id="slug" class="form-control m-2 slug"
-                                            placeholder="Slug" readonly>
+                        <input type="text" name="slug" id="slug" value="" class="form-control m-2 slug"
+                            placeholder="Slug" readonly>
 
-                                        <button type="submit" class="btn btn-success mt-3">Submit</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <button type="submit" class="btn btn-success mt-3">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
-@endsection
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        All Services
+                    </h3>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover card-table table-vcenter text-nowrap">
+                            <thead class="border-bottom-0 pt-3 pb-3">
+                                <tr>
+                                    <th>Services</th>
+                                    <th>Slug</th>
+                                    <th class="text-right">Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($services as $service)
+                                    <tr style="vertical-align: center;">
+                                        <td class="fs-13 "><span></span>{{ $service->service }}
+                                        </td>
+                                        <td class="fs-13 "><span></span>{{ $service->slug }}</td>
+                                        <td class="text-right">
+                                            <a href="/admin/edit-service/{{ $service->id }}"
+                                                class="btn btn-outline-primary">Edit</a>
+                                        </td>
+                                        <td>
+                                            <form action="/admin/delete-service/{{ $service->id }}" method="POST">
+                                                @csrf
+                                                @method('delete')
+                                                <button type="submit" class="btn btn-outline-danger">
+                                                    Delete
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-@section('customJs')
-    <script>
-        $('#name').change(function() {
-            element = $(this);
-            $.ajax({
-                url: '{{ route('getSlug') }}',
-                type: 'get',
-                data: {
-                    title: element.val()
-                },
-                dataType: 'json',
-                success: function(response) {
-                    if (response["status"] == true) {
-                        $("#slug").val(response["slug"]);
-                    }
-                }
-            })
-        });
-    </script>
+    </div>
+
+
 @endsection

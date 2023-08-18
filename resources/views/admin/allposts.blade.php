@@ -25,7 +25,6 @@
                         <table class="table table-hover card-table table-vcenter text-nowrap">
                             <thead class="border-bottom-0 pt-3 pb-3">
                                 <tr class="text-center">
-                                    <th>#</th>
                                     <th>Image</th>
                                     <th>Post Title</th>
                                     <th>Post Author</th>
@@ -38,9 +37,8 @@
                                 @foreach ($posts as $post)
                                     <tr style="vertical-align: center;
                                 text-align: center">
-                                        <td>{{ $post->id }}</td>
-                                        <td><img class="avatat avatar-md brround me-2" src="/posts/{{ $post->media }}"
-                                                alt="img"></td>
+                                        <td><img class="" src="/posts/{{ $post->media }}" alt="img"
+                                                height="100px" width="150px"></td>
                                         <td class="fs-13 text-success"><span
                                                 class="dot-label bg-success me-2 w-2 h-2"></span>{{ $post->title }}</td>
                                         <td class="fs-13 text-success"><span

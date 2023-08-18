@@ -42,7 +42,7 @@
 
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-label">Link<span class="text-red">*</span></label>
+                                    <label class="form-label">Link (optional)</label>
                                     <input type="url" class="form-control" name="link" placeholder="Link of post"
                                         required>
                                 </div>
