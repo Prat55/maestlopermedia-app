@@ -2,14 +2,14 @@
 <aside class="app-sidebar">
     <div class="app-sidebar__logo">
         <a class="header-brand" href="index.php.html">
-            <img src="{{ asset('admin-assets/images/brand/logo.png') }}" class="header-brand-img desktop-lgo"
-                alt="Azea logo">
-            <img src="{{ asset('admin-assets/images/brand/logo1.png') }}" class="header-brand-img dark-logo"
-                alt="Azea logo">
-            <img src="{{ asset('admin-assets/images/brand/favicon.png') }}" class="header-brand-img mobile-logo"
-                alt="Azea logo">
-            <img src="{{ asset('admin-assets/images/brand/favicon1.png') }}" class="header-brand-img darkmobile-logo"
-                alt="Azea logo">
+            <img src="{{ asset('user-assets/images/logos/logomm.png') }}" class="header-brand-img desktop-lgo"
+                alt="Maestloper Media">
+            <img src="{{ asset('user-assets/images/logos/Logo-1 (1).png') }}" class="header-brand-img dark-logo"
+                alt="Maestloper Media">
+            <img src="{{ asset('user-assets/images/logos/favicon.png') }}" class="header-brand-img mobile-logo"
+                alt="Maestloper Media">
+            <img src="{{ asset('user-assets/images/logos/favicon.png') }}" class="header-brand-img darkmobile-logo"
+                alt="Maestloper Media">
         </a>
     </div>
 
