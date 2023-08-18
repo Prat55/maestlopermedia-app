@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Form;
 use App\Models\Post;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -20,6 +21,18 @@ class AdminHomeController extends Controller
     {
         $posts = Post::all();
         return view('admin.allposts')->with('posts', $posts);
+    }
+
+    protected function featuredposts()
+    {
+        $posts = Post::latest()->take(10)->get();
+        return view('admin.featuredpost')->with('posts', $posts);
+    }
+
+    protected function message()
+    {
+        $forms = Form::all();
+        return view('admin.form')->with('forms', $forms);
     }
 
     protected function addpost()

@@ -39,9 +39,14 @@ Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.auth'], function () {
         Route::get('/dashboard', [AdminHomeController::class, 'index'])->name('dashboard');
         Route::get('/all-posts', [AdminHomeController::class, 'allposts'])->name('allposts');
+        Route::get('/featured-posts', [AdminHomeController::class, 'featuredposts'])->name('featuredposts');
         Route::get('/logout', [AdminHomeController::class, 'logout'])->name('logout');
         Route::get('/addpost', [AdminHomeController::class, 'addpost'])->name('addpost');
         Route::get('/addservice', [AdminServiceController::class, 'index'])->name('addservice');
+
+        // *Form Routes
+        Route::get('/messages', [AdminHomeController::class, 'message'])->name('form');
+
 
         //* Posts CRUD Route
         Route::post('/add', [AdminHomeController::class, 'store']);
