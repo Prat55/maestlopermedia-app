@@ -36,13 +36,6 @@ class AdminHomeController extends Controller
         return view('admin.editpost')->with('posts', $posts)->with('services', $services);
     }
 
-    public function service()
-    {
-        $posts = Post::all();
-        $services = Service::all();
-        return view('admin.editpost')->with('posts', $posts)->with('services', $services);
-    }
-
     public function store(Request $request)
     {
         if ($request->hasFile("media")) {
@@ -80,6 +73,7 @@ class AdminHomeController extends Controller
             "author" => $request->author,
             "media" => $post->media,
             "service_id" => $request->service,
+            "link" => $request->link,
         ]);
         return redirect("/admin/all-posts");
     }

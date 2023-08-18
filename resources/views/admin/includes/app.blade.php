@@ -91,8 +91,11 @@
     <!-- Back to top -->
     <a href="#top" id="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
+    @yield('customJs')
+
     <!-- Jquery js-->
     <script src="{{ asset('admin-assets/js/jquery.min.js') }}"></script>
+
 
     <!-- Bootstrap5 js-->
     <script src="{{ asset('admin-assets/plugins/bootstrap/popper.min.js') }}"></script>
@@ -153,7 +156,6 @@
     <!-- Rounded bar chart js-->
     <script src="{{ asset('admin-assets/js/rounded-barchart.js') }}"></script>
 
-    @yield('customJs')
 </body>
 
 </html>

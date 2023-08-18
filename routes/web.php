@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\admin\AdminHomeController;
 use App\Http\Controllers\admin\AdminLoginController;
+use App\Http\Controllers\admin\AdminServiceController;
 use App\Http\Controllers\frontend\UserHomeController;
+use Illuminate\Http\Request as HttpRequest;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -40,6 +42,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/all-posts', [AdminHomeController::class, 'allposts'])->name('allposts');
         Route::get('/logout', [AdminHomeController::class, 'logout'])->name('logout');
         Route::get('/addpost', [AdminHomeController::class, 'addpost'])->name('addpost');
+        Route::get('/addservice', [AdminServiceController::class, 'index'])->name('addservice');
 
         //* Posts Route for add,update and delete
         Route::post('/add', [AdminHomeController::class, 'store']);
@@ -48,11 +51,11 @@ Route::group(['prefix' => 'admin'], function () {
         Route::delete('/delete/{id}', [AdminHomeController::class, 'destroy']);
 
 
-        Route::get('/getSlug', function (Request $request) {
+        Route::get('/getSlug', function (HttpRequest $request) {
 
             $slug = '';
-            if (!empty($request->service)) {
-                $slug = Str::slug($request->service);
+            if (!empty($request->title)) {
+                $slug = Str::slug($request->title);
             }
 
             return response()->json([
