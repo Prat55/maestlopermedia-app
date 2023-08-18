@@ -397,6 +397,21 @@
                     <span class="category">Design Responsive</span>
                 </div>
             </div>
+            <div class="project-item style-two wow fadeInUp delay-0-8s">
+                <div class="project-iamge">
+                    <img src="{{ asset('user-assets/myimages/services/img1.png') }}" alt="Project" />
+                    <div class="project-over">
+                        <a class="details-btn" href="https://capitolinefinance.site/"><i
+                                class="far fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h4>
+                        <a href="https://capitolinefinance.site/" target="_blank">Capitoline Finance</a>
+                    </h4>
+                    <span class="category">Design Responsive</span>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Project Area end -->
