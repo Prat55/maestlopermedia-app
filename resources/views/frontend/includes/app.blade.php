@@ -56,7 +56,7 @@
         <!-- footer area start -->
         <footer class="main-footer footer-two pt-80 bgc-lighter">
             <div class="container">
-                <div class="row justify-content-xl-between justify-content-center">
+                <div class="row justify-content-xl-between justify-space-between">
                     <div class="col-xl-4 col-lg-5 col-md-6">
                         <div class="footer-widget widget_about me-md-5 wow fadeInUp delay-0-2s">
                             <div class="footer-logo mb-25">

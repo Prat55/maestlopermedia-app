@@ -570,7 +570,7 @@
                 </div>
                 <div class="testimonial-item-two wow fadeInUp delay-0-4s">
                     <div class="testimonial-author">
-                        <img src="{{ asset('user-assets/clients/testi2.jpg') }}" alt="Author" />
+                        <img src="{{ asset('user-assets/clients/testi2.png') }}" alt="Author" />
                     </div>
                     <div class="testimonial-content">
                         <p>

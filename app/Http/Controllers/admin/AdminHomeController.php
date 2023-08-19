@@ -15,7 +15,8 @@ class AdminHomeController extends Controller
     protected function index()
     {
         $posts = Post::all();
-        return view('admin.dashboard')->with('posts', $posts);
+        $services = Service::all();
+        return view('admin.dashboard')->with('posts', $posts)->with('services', $services);
     }
 
     protected function allposts()
@@ -32,7 +33,7 @@ class AdminHomeController extends Controller
 
     protected function form()
     {
-        $forms = Form::all();
+        $forms = Form::latest()->get();
         return view('admin.form')->with('forms', $forms);
     }
 

@@ -86,26 +86,32 @@
                             <table class="table table-inbox table-hover text-nowrap">
                                 <tbody>
                                     @foreach ($forms as $fm)
-                                        <form action="/admin/message/{{ $fm->id }}" method="post">
-                                            @csrf
-                                            @method('put')
-                                            <tr class="">
-                                                <button type="submit" class="emailBtn">
-                                                    <td class="inbox-small-cells">  
-                                                        <i class="fa-solid fa-envelope"></i>    
-                                                    </td>
-                                                    <td class="view-message dont-show font-weight-semibold">    
-                                                        {{ $fm->email }}    
-                                                    </td>
-                                                    <td class="view-message">   
-                                                        {{ $fm->service->service }} 
-                                                    </td>
-                                                    <td class="view-message text-end text-muted">   
-                                                        {{ $fm->created_at }}   
-                                                    </td>
-                                                </button>
+                                        @csrf
+                                        @method('put')
+                                        <a href="/admin/message/{{ $fm->id }}">
+                                            <tr class="emailForm">
+                                                <td type="submit" class="inbox-small-cells">
+                                                    <a href="/admin/message/{{ $fm->id }}">
+                                                        <i class="fa-solid fa-envelope"></i>
+                                                    </a>
+                                                </td>
+                                                <td class="view-message dont-show font-weight-semibold">
+                                                    <a href="/admin/message/{{ $fm->id }}">
+                                                        {{ $fm->email }}
+                                                    </a>
+                                                </td>
+                                                <td class="view-message">
+                                                    <a href="/admin/message/{{ $fm->id }}">
+                                                        {{ $fm->service->service }}
+                                                    </a>
+                                                </td>
+                                                <td class="view-message text-end text-muted">
+                                                    <a href="/admin/message/{{ $fm->id }}">
+                                                        {{ $fm->created_at }}
+                                                    </a>
+                                                </td>
                                             </tr>
-                                        </form>
+                                        </a>
                                     @endforeach
                                     {{-- <tr class="">
                                         <td class="inbox-small-cells">

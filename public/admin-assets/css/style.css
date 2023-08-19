@@ -52423,9 +52423,14 @@ Dimmer
 /* ######  sidemenu ###### */
 /*# sourceMappingURL=style.css.map */
 
+.emailForm {
+    position: relative;
+}
+
 .emailBtn {
     width: 100%;
     height: 50px;
     position: absolute;
-    opacity: 0;
+    opacity: 1;
+    top: 0;
 }

@@ -27,6 +27,8 @@ Route::get('/about', [UserHomeController::class, 'about'])->name('about');
 Route::get('/services', [UserHomeController::class, 'services'])->name('services');
 Route::get('/contact', [UserHomeController::class, 'contact'])->name('contact');
 Route::get('/portfolio', [UserHomeController::class, 'portfolio'])->name('portfolio');
+Route::post('/submit', [UserHomeController::class, 'submit']);
+
 
 Route::group(['prefix' => 'admin'], function () {
 
@@ -45,8 +47,8 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/addservice', [AdminServiceController::class, 'index'])->name('addservice');
 
         // *Form Routes
-        Route::get('/forms', [AdminHomeController::class, 'form'])->name('form');
-        Route::put('/message/{id}', [AdminHomeController::class, 'message']);
+        Route::get('/inbox', [AdminHomeController::class, 'form'])->name('form');
+        Route::get('/message/{id}', [AdminHomeController::class, 'message']);
 
 
         //* Posts CRUD Route

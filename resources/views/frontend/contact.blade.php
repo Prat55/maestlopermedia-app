@@ -39,14 +39,16 @@
                             products/services, have a technical question, or simply want
                             to share your thoughts.
                         </p>
-                        <form id="contactForm" class="contactForm z-1 rel" action="assets/php/form-process.php"
-                            name="contactForm" method="post">
+                        <form id="contactForm" class="contactForm z-1 rel" action="/submit" name="contactForm"
+                            method="post">
+                            @csrf
+                            @include('admin.message')
                             <div class="row pt-15">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="name">Full Name</label>
                                         <input type="text" id="name" name="name" class="form-control"
-                                            value="" placeholder=" Your Full Name" required=""
+                                            value="" placeholder=" Your Full Name"
                                             data-error="Please enter your name" />
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -55,7 +57,7 @@
                                     <div class="form-group">
                                         <label for="email">Email Address</label>
                                         <input type="email" id="email" name="email" class="form-control"
-                                            value="" placeholder="support@gmail.com" required=""
+                                            value="" placeholder="support@gmail.com" required
                                             data-error="Please enter your Email" />
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -64,23 +66,21 @@
                                     <div class="form-group">
                                         <label for="phone">Phone Number</label>
                                         <input type="text" id="phone" name="phone" class="form-control"
-                                            value="" placeholder="+91 1234567890" />
+                                            value="" placeholder="+91 1234567890" required />
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-30">
                                     <div class="form-group">
-                                        <label for="select-subject">Select Requirments</label>
-                                        <select name="select-subject" id="select-subject">
-                                            <option value="default" selected="">
-                                                Graphic Designing
+                                        <label for="select-subject">Select Requirment</label>
+                                        <select name="select_req" id="select-subject" value="" required>
+                                            <option value="">
+                                                <-- Select Requirment -->
                                             </option>
-                                            <option value="Design">Digital Marketing</option>
-                                            <option value="Development">
-                                                Software Development
-                                            </option>
-                                            <option value="SEO">Social Media Marketing</option>
-                                            <option value="SEO">Website Designing</option>
-                                            <option value="SEO">Production</option>
+                                            @foreach ($services as $item)
+                                                <option value="{{ $item->id }}">
+                                                    {{ $item->service }}
+                                                </option>
+                                            @endforeach
                                         </select>
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -88,7 +88,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="message">Write Message</label>
-                                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Write Message" required=""
+                                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Write Message" required
                                             data-error="Please enter your Message"></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -104,6 +104,7 @@
                             </div>
                         </form>
                     </div>
+
                 </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="contact-info wow fadeInLeft delay-0-2s">

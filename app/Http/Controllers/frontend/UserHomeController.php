@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Form;
 use App\Models\Post;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -34,6 +35,21 @@ class UserHomeController extends Controller
 
     protected function contact()
     {
-        return view('frontend.contact');
+        $services = Service::all();
+        return view('frontend.contact')->with('services', $services);
+    }
+
+    protected function submit(Request $request)
+    {
+        $form = new Form([
+            "name" => $request->name,
+            "email" => $request->email,
+            "phone" => $request->phone,
+            "service_id" => $request->select_req,
+            "message" => $request->message,
+        ]);
+        $form->save();
+
+        return redirect("/contact")->with('success', 'Form submitted successfully');
     }
 }

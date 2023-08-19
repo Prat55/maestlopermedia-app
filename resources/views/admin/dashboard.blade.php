@@ -35,10 +35,10 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-6">
                             <div class="">
-                                <span class="fs-14 font-weight-normal">Total Sales</span>
+                                <span class="fs-14 font-weight-normal">Total Posts</span>
                                 <h2 class="mb-2 number-font carn1 font-weight-bold">{{ $posts->count() }}</h2>
-                                <span class=""><i class="fa fa-circle-arrow-up"></i> 76% <span
-                                        class="ms-1 fs-11">Growth This Month</span>
+                                <span class="">
+                                    <i class="fa fa-circle-arrow-up"></i>
                                 </span>
                             </div>
                         </div>
@@ -57,10 +57,10 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-6">
                             <div class="">
-                                <span class="fs-14">Total Stats</span>
-                                <h2 class="mb-2 mt-1 number-font carn2 font-weight-bold">1,678</h2>
-                                <span class=""><i class="fa fa-circle-arrow-down"></i> 15%
-                                    <span class="ms-1 fs-11">Loss This Month</span>
+                                <span class="fs-14">Total Services</span>
+                                <h2 class="mb-2 mt-1 number-font carn2 font-weight-bold">{{ $services->count() }}</h2>
+                                <span class="">
+                                    <i class="fa fa-circle-arrow-up"></i>
                                 </span>
                             </div>
                         </div>
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12">
+        {{-- <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12">
             <div class="card overflow-hidden dash1-card border-0 dash3">
                 <div class="card-body">
                     <div class="row">
@@ -116,13 +116,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
     <!-- End Row-1 -->
 
     <!-- Row-2 -->
     <div class="row">
-        <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
+        {{-- <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
             <div class="card">
                 <div class="card-header border-bottom-0">
                     <h3 class="card-title">Sales Activity</h3>
@@ -133,7 +133,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
             <div class="card">
                 <div class="card-header">
@@ -141,7 +141,7 @@
                         Recent Activity
                     </h3>
                     <div class="card-options">
-                        <a href="javascript:void(0);" class="btn btn-sm btn-primary">View All</a>
+                        <a href="{{ route('form') }}" class="btn btn-sm btn-primary">View All</a>
                     </div>
                 </div>
                 <div class="card-body p-0">
@@ -231,7 +231,7 @@
         </div>
     </div>
     <!-- End Row-2 -->
-
+    {{--
     <!-- Row-3 -->
     <div class="row row-deck">
         <div class="col-md-12 col-sm-12 col-lg-12 col-xl-6">
@@ -617,5 +617,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection
