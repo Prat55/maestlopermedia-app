@@ -47,6 +47,7 @@ class UserHomeController extends Controller
             "phone" => $request->phone,
             "service_id" => $request->select_req,
             "message" => $request->message,
+            "links" => $request->website,
         ]);
         $form->save();
 

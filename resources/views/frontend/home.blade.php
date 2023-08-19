@@ -620,7 +620,7 @@
                                     <span class="title">Email Address</span>
                                     <b class="text"><a href="mailto:info@maestlopermedia.com"><span
                                                 class="__cf_email__"
-                                                data-cfemail="196a6c6969766b6d597e74787075377a7674">info@maestlopermedia.com</span></a></b>
+                                                data-cfemail="®í">info@maestlopermedia.com</span></a></b>
                                 </div>
                             </div>
                             <div class="contact-info-item">
@@ -637,14 +637,14 @@
                 </div>
                 <div class="col-xl-5 col-lg-6">
                     <form id="contact-area-form" class="contact-area-form text-center wow fadeInRight delay-0-2s"
-                        name="contact-area-form" action="#" method="post">
+                        name="contact-area-form" action="/submit" method="post">
                         <h4>Send us Message</h4>
-                        <input type="text" id="full-name" name="full-name" class="form-control" value=""
+                        <input type="text" id="full-name" name="name" class="form-control" value=""
                             placeholder="Full Name" required="" />
-                        <input type="email" id="blog-email" name="blog-email" class="form-control" value=""
+                        <input type="email" id="blog-email" name="email" class="form-control" value=""
                             placeholder="Email Address" required="" />
-                        <input type="text" id="website" name="website" class="form-control" value=""
-                            placeholder="Website" required="" />
+                        <input type="url" id="website" name="website" class="form-control" value=""
+                            placeholder="Website" />
                         <textarea name="message" id="message" class="form-control" rows="5" placeholder="Write Message"
                             required=""></textarea>
                         <button type="submit" class="theme-btn">
