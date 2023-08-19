@@ -52422,3 +52422,10 @@ Dimmer
 /*---End profile---*/
 /* ######  sidemenu ###### */
 /*# sourceMappingURL=style.css.map */
+
+.emailBtn {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+}

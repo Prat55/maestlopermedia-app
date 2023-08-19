@@ -5465,6 +5465,10 @@ h6,
     border-color: black;
 }
 
+.text-wh {
+    color: #fff !important;
+}
+
 .main-header.header-two.fixed-header .header-upper .menu-btns .menu-sidebar button .icon-bar {
     background: black;
 }
@@ -13813,4 +13817,8 @@ input.whats-input[type=text]:focus {
         min-width: 47%;
         padding: 3%;
     }
+}
+
+.main-header.header-two.fixed-header .header-upper .menu-btns .style-three:hover {
+    color: #fff !important;
 }

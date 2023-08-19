@@ -27,7 +27,7 @@ class UserHomeController extends Controller
 
     protected function portfolio()
     {
-        $posts = Post::all();
+        $posts = Post::latest()->get();
         $services = Service::all();
         return view('frontend.portfolio')->with('posts', $posts)->with('services', $services);
     }
