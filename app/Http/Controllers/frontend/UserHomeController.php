@@ -46,12 +46,17 @@ class UserHomeController extends Controller
             "name" => $request->name,
             "email" => $request->email,
             "phone" => $request->phone,
+            "links" => $request->link,
             "service_id" => $request->select_req,
             "message" => $request->message,
-            "links" => $request->website,
         ]);
         $form->save();
 
-        return redirect("/contact")->with('success', 'Form submitted successfully');
+        return back()->with('success', 'Form submitted successfully');
+    }
+
+    protected function privacy()
+    {
+        return view('frontend.privacy');
     }
 }

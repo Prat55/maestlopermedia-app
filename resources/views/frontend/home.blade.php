@@ -645,7 +645,7 @@
                             placeholder="Full Name" required="" />
                         <input type="email" id="blog-email" name="email" class="form-control" value=""
                             placeholder="Email Address" required="" />
-                        <input type="url" id="website" name="website" class="form-control" value=""
+                        <input type="url" id="website" name="link" class="form-control" value=""
                             placeholder="Website" />
                         <input type="number" id="phone" name="phone" class="form-control" value=""
                             placeholder="Phone Number" />

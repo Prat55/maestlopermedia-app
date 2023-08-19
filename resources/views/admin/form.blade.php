@@ -129,7 +129,9 @@
                                     </tr> --}}
                                 </tbody>
                             </table>
-                            {{ $forms->links() }}
+                            <div class="row">
+                                {{ $forms->links() }}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -15,6 +15,7 @@ class Form extends Model
         'phone',
         'service_id',
         'message',
+        'links',
         'created_at',
         'updated_at',
         'time',

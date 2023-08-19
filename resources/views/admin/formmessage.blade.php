@@ -49,6 +49,12 @@
                         </p>
                         <p>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $forms->message }}
+
+                            <br>
+                            <br>
+                            @if (!empty($forms->links))
+                                Website Link:&nbsp;{{ $forms->links }}
+                            @endif
                         </p>
                         <p class="mb-0">Yours,</p>
                         <p>

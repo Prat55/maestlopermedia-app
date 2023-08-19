@@ -34,7 +34,7 @@ class AdminHomeController extends Controller
 
     protected function form()
     {
-        $forms = Form::paginate(10);
+        $forms = Form::latest()->paginate(10);
         return view('admin.form')->with('forms', $forms);
     }
 
