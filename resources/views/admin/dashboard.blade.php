@@ -36,7 +36,7 @@
                         <div class="col-md-6 col-sm-6 col-6">
                             <div class="">
                                 <span class="fs-14 font-weight-normal">Total Sales</span>
-                                <h2 class="mb-2 number-font carn1 font-weight-bold">3,257</h2>
+                                <h2 class="mb-2 number-font carn1 font-weight-bold">{{ $posts->count() }}</h2>
                                 <span class=""><i class="fa fa-circle-arrow-up"></i> 76% <span
                                         class="ms-1 fs-11">Growth This Month</span>
                                 </span>

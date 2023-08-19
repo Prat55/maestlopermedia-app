@@ -14,7 +14,8 @@ class AdminHomeController extends Controller
 {
     protected function index()
     {
-        return view('admin.dashboard');
+        $posts = Post::all();
+        return view('admin.dashboard')->with('posts', $posts);
     }
 
     protected function allposts()
