@@ -95,7 +95,7 @@
                             </div>
                         </div>
                         <div class="year-of-experience wow zoomIn delay-0-6s">
-                            <span class="number">5+</span>
+                            <span class="number">4+</span>
                             Years Experience In Digital Services
                         </div>
                     </div>
@@ -137,8 +137,8 @@
                     <div class="col-xl-3 col-sm-6">
                         <div class="counter-item for-margin counter-text-wrap wow fadeInLeft delay-0-8s">
                             <i class="flaticon-trophy"></i>
-                            <span class="count-text" data-speed="3000" data-stop="03">0</span>
-                            <span class="counter-title">Years</span>
+                            <span class="count-text" data-speed="3000" data-stop="04">0</span>
+                            <span class="counter-title">Experience</span>
                         </div>
                     </div>
                 </div>
