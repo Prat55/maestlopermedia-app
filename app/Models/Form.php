@@ -17,6 +17,8 @@ class Form extends Model
         'message',
         'created_at',
         'updated_at',
+        'time',
+        'date',
     ];
 
     protected function service()

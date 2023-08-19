@@ -10,8 +10,8 @@
                             <img class="logo1 d-none" src="{{ asset('user-assets/images/logos/logomm.png') }}"
                                 alt="Logo" title="Logo" height="80px" width="178px" />
 
-                            <img class="logo2" src="{{ asset('user-assets/images/logos/logo-1 (1).png') }}"
-                                alt="Logo" style="height: 80px; min-width: 120%" />
+                            <img class="logo2" src="{{ asset('user-assets/images/logos/logo-1.png') }}" alt="Logo"
+                                style="height: 80px; min-width: 120%" />
                         </a>
                     </div>
                 </div>

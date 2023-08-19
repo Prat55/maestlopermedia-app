@@ -16,7 +16,8 @@ class AdminHomeController extends Controller
     {
         $posts = Post::all();
         $services = Service::all();
-        return view('admin.dashboard')->with('posts', $posts)->with('services', $services);
+        $forms = Form::latest()->take(5)->get();
+        return view('admin.dashboard')->with('posts', $posts)->with('services', $services)->with('forms', $forms);
     }
 
     protected function allposts()

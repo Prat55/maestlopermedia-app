@@ -138,7 +138,7 @@
             <div class="card">
                 <div class="card-header">
                     <h3 class="card-title">
-                        Recent Activity
+                        Recent Messages
                     </h3>
                     <div class="card-options">
                         <a href="{{ route('form') }}" class="btn btn-sm btn-primary">View All</a>
@@ -146,20 +146,22 @@
                 </div>
                 <div class="card-body p-0">
                     <ul class="recent-activity">
-                        <li class="mb-5 mt-5">
-                            <div>
-                                <span class="activity-timeline bg-primary text-white">1</span>
-                                <div class="activity-timeline-content">
-                                    <span class="font-weight-normal1 fs-13">New Products,</span><span
-                                        class="text-muted fs-12 float-end">6:45pm</span>
-                                    <span class="activity-sub-content text-info fs-11">52% New
-                                        products</span>
-                                    <p class="text-muted fs-12 mt-1">More than 200 new products are
-                                        added</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mb-5">
+                        @foreach ($forms as $form)
+                            <a href="/admin/message/{{ $form->id }}">
+                                <li class="mb-5 mt-5">
+                                    <div>
+                                        <span class="activity-timeline bg-primary text-white">{{  }}</span>
+                                        <div class="activity-timeline-content">
+                                            <span class="font-weight-normal1 fs-13">{{ $form->name }}</span><span
+                                                class="text-muted fs-12 float-end">{{ $form->time }}</span>
+                                            <span class="activity-sub-content text-info fs-11"></span>
+                                            <p class="text-muted fs-12 mt-1">For: {{ $form->service->service }}</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+                        @endforeach
+                        {{-- <li class="mb-5">
                             <div>
                                 <span class="activity-timeline bg-success text-white">2</span>
                                 <div class="activity-timeline-content">
@@ -224,7 +226,7 @@
                                         week</p>
                                 </div>
                             </div>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
