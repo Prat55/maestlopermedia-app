@@ -293,10 +293,10 @@
                             <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
                                 <div class="counter-item style-two counter-text-wrap wow fadeInRight delay-0-5s">
                                     <i class="flaticon-global"></i>
-                                    <span class="count-text" data-speed="3000" data-stop="03">0</span>
-                                    <span class="counter-title">Years</span>
+                                    <span class="count-text" data-speed="3000" data-stop="04">0</span>
+                                    <span class="counter-title">Experience</span>
                                     <p>
-                                        Maestloper Media Completed more Than Three Years in
+                                        Maestloper Media Completed more Than Four Years in
                                         Digital Services.
                                     </p>
                                 </div>
