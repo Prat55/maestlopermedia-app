@@ -85,10 +85,12 @@
                             <h4 class="footer-title">Quick Links</h4>
                             <ul class="list-style-two">
                                 <li><a href="/">Home</a></li>
+                                <li><a href="{{ route('privacy') }}">Privacy & Policy</a></li>
                                 <li><a href="{{ route('about') }}">About Us</a></li>
+                                <li><a href="{{ route('terms') }}">Terms & Condition</a></li>
                                 <li><a href="{{ route('services') }}">Services</a></li>
+                                <br>
                                 <li><a href="{{ route('contact') }}">Contact Us</a></li>
-
                             </ul>
                         </div>
                     </div>

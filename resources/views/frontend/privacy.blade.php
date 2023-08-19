@@ -8,7 +8,9 @@
                 <div class="col-lg-10 privacy">
                     <h2 class="text-center">Privacy Policy</h2>
 
-                    <p>At Maestloper Media, accessible from https://www.maestlopermedia.com/, one of our main priorities is
+                    <p>At Maestloper Media, accessible from <a
+                            href="https://www.maestlopermedia.com/">https://www.maestlopermedia.com/</a>, one of our main
+                        priorities is
                         the privacy of our visitors. This Privacy Policy document contains types of information that is
                         collected and recorded by Maestloper Media and how we use it.</p>
 
@@ -149,9 +151,6 @@
                     <p>We may update our Privacy Policy from time to time. Thus, we advise you to review this page
                         periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on
                         this page. These changes are effective immediately, after they are posted on this page.</p>
-
-                    <p>Our Privacy Policy was created with the help of the <a
-                            href="https://www.termsfeed.com/privacy-policy-generator/">Privacy Policy Generator</a>.</p>
 
                     <h2>Contact Us</h2>
 

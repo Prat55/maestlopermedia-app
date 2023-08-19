@@ -59,4 +59,9 @@ class UserHomeController extends Controller
     {
         return view('frontend.privacy');
     }
+
+    protected function terms()
+    {
+        return view('frontend.terms');
+    }
 }
