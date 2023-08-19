@@ -129,12 +129,12 @@
                                     </tr> --}}
                                 </tbody>
                             </table>
-
+                            {{ $forms->links() }}
                         </div>
                     </div>
                 </div>
             </div>
-            <ul class="pagination float-end mb-4">
+            {{-- <ul class="pagination float-end mb-4">
                 <li class="page-item page-prev disabled">
                     <a class="page-link" href="javascript:void(0);" tabindex="-1">Prev</a>
                 </li>
@@ -146,7 +146,7 @@
                 <li class="page-item page-next">
                     <a class="page-link" href="javascript:void(0);">Next</a>
                 </li>
-            </ul>
+            </ul> --}}
         </div>
     </div>
 @endsection
