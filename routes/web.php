@@ -45,7 +45,8 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/addservice', [AdminServiceController::class, 'index'])->name('addservice');
 
         // *Form Routes
-        Route::get('/messages', [AdminHomeController::class, 'message'])->name('form');
+        Route::get('/forms', [AdminHomeController::class, 'form'])->name('form');
+        Route::put('/message/{id}', [AdminHomeController::class, 'message']);
 
 
         //* Posts CRUD Route

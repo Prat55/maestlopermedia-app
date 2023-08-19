@@ -24,13 +24,8 @@
     <section class="project-page-area pt-130 pb-100 rel z-1">
         <div class="container">
             <div class="row justify-content-between align-items-end pb-30">
-                <div class="col-xl-6">
-                    <div class="section-title mb-30 wow fadeInUp delay-0-2s">
-                        <span class="sub-title style-two mb-15">Portfolio</span>
-                        <h2></h2>
-                    </div>
-                </div>
-                <div class="col-xl-6 text-xl-end">
+
+                <div class="col-xl-12 text-xl-end">
                     <ul class="project-filter filter-btns-one d-inline-flex mb-30 wow fadeInUp delay-0-4s">
                         <li data-filter="*" class="current">All</li>
 

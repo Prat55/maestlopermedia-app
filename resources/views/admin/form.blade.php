@@ -1,10 +1,10 @@
 @extends('admin.includes.app')
-@section('title', 'Messages')
+@section('title', 'Forms')
 @section('content')
     <!--Page header-->
     <div class="page-header">
         <div class="page-leftheader">
-            <h4 class="page-title mb-0 text-primary">Messages</h4>
+            <h4 class="page-title mb-0 text-primary">Inbox</h4>
         </div>
     </div>
     <!--End Page header-->
@@ -82,65 +82,30 @@
             <div class="card">
                 <div class="card-body p-6">
                     <div class="inbox-body">
-                        {{-- <div class="mail-search mb-4">
-                            <input type="text" placeholder="Search Inbox" class="form-control">
-                        </div> --}}
-                        {{-- <div class="mail-option">
-                                 <div class="chk-all">
-                                    <div class="btn-group">
-                                        <a data-bs-toggle="dropdown" href="javascript:void(0);" class="btn mini all"
-                                            aria-expanded="false">
-                                            All
-                                            <i class="fa fa-angle-down "></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="javascript:void(0);"> None</a></li>
-                                            <li><a href="javascript:void(0);"> Read</a></li>
-                                            <li><a href="javascript:void(0);"> Unread</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            <div class="btn-group">
-                                <a data-original-title="Refresh" data-placement="top" data-bs-toggle=""
-                                    href="javascript:void(0);" class="btn mini tooltips">
-                                    <i class=" fa fa-refresh"></i>
-                                </a>
-                            </div>
-                            <div class="btn-group hidden-phone">
-                                <a data-bs-toggle="dropdown" href="javascript:void(0);" class="btn mini blue"
-                                    aria-expanded="false">
-                                    More
-                                    <i class="fa fa-angle-down "></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="javascript:void(0);"><i class="fa fa-pencil me-2"></i> Mark as Read</a>
-                                    </li>
-                                    <li><a href="javascript:void(0);"><i class="fa fa-ban me-2"></i> Spam</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="javascript:void(0);"><i class="fa fa-trash-o me-2"></i> Delete</a></li>
-                                </ul>
-                            </div>
-                            <ul class="unstyled inbox-pagination">
-                                <li><span>1-50 of 234</span></li>
-                                <li>
-                                    <a class="np-btn" href="javascript:void(0);"><i
-                                            class="fa fa-angle-right pagination-right"></i></a>
-                                </li>
-                            </ul>
-                        </div> --}}
                         <div class="table-responsive">
                             <table class="table table-inbox table-hover text-nowrap">
                                 <tbody>
                                     @foreach ($forms as $fm)
-                                        <a href="">
+                                        <form action="/admin/message/{{ $fm->id }}" method="post">
+                                            @csrf
+                                            @method('put')
                                             <tr class="">
-                                                <td class="inbox-small-cells"><i class="fa fa-bookmark"></i></td>
-                                                <td class="view-message dont-show font-weight-semibold">{{ $fm->email }}
-                                                </td>
-                                                <td class="view-message">{{ $fm->service->service }}</td>
-                                                <td class="view-message text-end text-muted">{{ $fm->created_at }}</td>
+                                                <button type="submit" class="emailBtn">
+                                                    <td class="inbox-small-cells">  
+                                                        <i class="fa-solid fa-envelope"></i>    
+                                                    </td>
+                                                    <td class="view-message dont-show font-weight-semibold">    
+                                                        {{ $fm->email }}    
+                                                    </td>
+                                                    <td class="view-message">   
+                                                        {{ $fm->service->service }} 
+                                                    </td>
+                                                    <td class="view-message text-end text-muted">   
+                                                        {{ $fm->created_at }}   
+                                                    </td>
+                                                </button>
                                             </tr>
-                                        </a>
+                                        </form>
                                     @endforeach
                                     {{-- <tr class="">
                                         <td class="inbox-small-cells">

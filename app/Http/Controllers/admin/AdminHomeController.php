@@ -29,11 +29,18 @@ class AdminHomeController extends Controller
         return view('admin.featuredpost')->with('posts', $posts);
     }
 
-    protected function message()
+    protected function form()
     {
         $forms = Form::all();
         return view('admin.form')->with('forms', $forms);
     }
+
+    public function message($id)
+    {
+        $forms = Form::findOrFail($id);
+        return view('admin.formmessage')->with('forms', $forms);
+    }
+
 
     protected function addpost()
     {

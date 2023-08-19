@@ -400,7 +400,7 @@
             @foreach ($posts as $post)
                 <div class="project-item style-two wow fadeInUp delay-0-8s">
                     <div class="project-iamge">
-                        <img src="/posts/{{ $post->media }}" alt="Project" height="267px" width="401px" />
+                        <img src="/posts/{{ $post->media }}" alt="Project" />
                         <div class="project-over">
                             <a class="details-btn" href="{{ $post->link }}"><i class="far fa-arrow-right"></i></a>
                         </div>
