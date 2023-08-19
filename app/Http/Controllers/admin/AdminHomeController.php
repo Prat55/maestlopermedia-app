@@ -44,7 +44,6 @@ class AdminHomeController extends Controller
         return view('admin.formmessage')->with('forms', $forms);
     }
 
-
     protected function addpost()
     {
         $posts = Post::all();

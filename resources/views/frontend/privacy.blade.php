@@ -21,8 +21,11 @@
                             contains types of information that is collected and recorded by Maestloper Media and
                             how we use it.</p>
 
-                        <p>If you have additional questions or require more information about our Privacy
-                            Policy, do not hesitate to contact us.</p>
+                    <p>At Maestloper Media, accessible from <a
+                            href="https://www.maestlopermedia.com/">https://www.maestlopermedia.com/</a>, one of our main
+                        priorities is
+                        the privacy of our visitors. This Privacy Policy document contains types of information that is
+                        collected and recorded by Maestloper Media and how we use it.</p>
 
                         <p>This Privacy Policy applies only to our online activities and is valid for visitors
                             to our website with regards to the information that they shared and/or collect in
@@ -172,12 +175,14 @@
                             they are posted on this page.</p>
                         <h4>Contact Us</h2>
 
-                        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate
-                            to contact us.</p>
-                    </div>
+                    <p>Our Privacy Policy was created with the help of the <a
+                            href="https://www.termsfeed.com/privacy-policy-generator/">Privacy Policy Generator</a>.</p>
+
+                    <h2>Contact Us</h2>
+
+                    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 @endsection

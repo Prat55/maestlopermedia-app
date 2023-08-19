@@ -28,7 +28,8 @@ Route::get('/services', [UserHomeController::class, 'services'])->name('services
 Route::get('/contact', [UserHomeController::class, 'contact'])->name('contact');
 Route::get('/portfolio', [UserHomeController::class, 'portfolio'])->name('portfolio');
 Route::post('/submit', [UserHomeController::class, 'submit']);
-Route::get('/privacy', [UserHomeController::class, 'privacy']);
+Route::get('/privacy', [UserHomeController::class, 'privacy'])->name('privacy');
+Route::get('/terms', [UserHomeController::class, 'terms'])->name('terms');
 
 
 Route::group(['prefix' => 'admin'], function () {
