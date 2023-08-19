@@ -636,8 +636,10 @@
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6">
+                    @include('admin.message')
                     <form id="contact-area-form" class="contact-area-form text-center wow fadeInRight delay-0-2s"
                         name="contact-area-form" action="/submit" method="post">
+                        @csrf
                         <h4>Send us Message</h4>
                         <input type="text" id="full-name" name="name" class="form-control" value=""
                             placeholder="Full Name" required="" />
@@ -645,8 +647,24 @@
                             placeholder="Email Address" required="" />
                         <input type="url" id="website" name="website" class="form-control" value=""
                             placeholder="Website" />
+                        <input type="number" id="phone" name="phone" class="form-control" value=""
+                            placeholder="Phone Number" />
+                        <select name="select_req" id="select-subject" class="form-control" value="" required>
+                            <option value="">
+                                Select Service
+                            </option>
+                            @foreach ($services as $item)
+                                <option value="{{ $item->id }}">
+                                    {{ $item->service }}
+                                </option>
+                            @endforeach
+                        </select>
                         <textarea name="message" id="message" class="form-control" rows="5" placeholder="Write Message"
                             required=""></textarea>
+
+
+
+                        </select>
                         <button type="submit" class="theme-btn">
                             Send messages <i class="fas fa-angle-double-right"></i>
                         </button>

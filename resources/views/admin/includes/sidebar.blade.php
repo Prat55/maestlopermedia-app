@@ -29,10 +29,11 @@
 
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('allposts') }}">
-                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="24" height="24"
-                    viewbox="0 0 24 24">
+                <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
                     <path
-                        d="M20 17V7c0-2.168-3.663-4-8-4S4 4.832 4 7v10c0 2.168 3.663 4 8 4s8-1.832 8-4zM12 5c3.691 0 5.931 1.507 6 1.994C17.931 7.493 15.691 9 12 9S6.069 7.493 6 7.006C6.069 6.507 8.309 5 12 5zM6 9.607C7.479 10.454 9.637 11 12 11s4.521-.546 6-1.393v2.387c-.069.499-2.309 2.006-6 2.006s-5.931-1.507-6-2V9.607zM6 17v-2.393C7.479 15.454 9.637 16 12 16s4.521-.546 6-1.393v2.387c-.069.499-2.309 2.006-6 2.006s-5.931-1.507-6-2z">
+                        d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z">
                     </path>
                 </svg>
                 <span class="side-menu__label">All posts</span>
@@ -40,10 +41,12 @@
         </li>
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('featuredposts') }}">
-                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="24" height="24"
-                    viewbox="0 0 24 24">
+                <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24">
+                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                    <path d="M11.17 8l-.58-.59L9.17 6H4v12h16V8h-8z" opacity=".3"></path>
                     <path
-                        d="M20 17V7c0-2.168-3.663-4-8-4S4 4.832 4 7v10c0 2.168 3.663 4 8 4s8-1.832 8-4zM12 5c3.691 0 5.931 1.507 6 1.994C17.931 7.493 15.691 9 12 9S6.069 7.493 6 7.006C6.069 6.507 8.309 5 12 5zM6 9.607C7.479 10.454 9.637 11 12 11s4.521-.546 6-1.393v2.387c-.069.499-2.309 2.006-6 2.006s-5.931-1.507-6-2V9.607zM6 17v-2.393C7.479 15.454 9.637 16 12 16s4.521-.546 6-1.393v2.387c-.069.499-2.309 2.006-6 2.006s-5.931-1.507-6-2z">
+                        d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V6h5.17l1.41 1.41.59.59H20v10z">
                     </path>
                 </svg>
                 <span class="side-menu__label">Featured posts</span>
@@ -51,10 +54,11 @@
         </li>
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('addpost') }}">
-                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="24" height="24"
-                    viewbox="0 0 24 24">
+                <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24" style="transform: rotate(45deg) !important;">
+                    <path d="M0 0h24v24H0V0z" fill="none"></path>
                     <path
-                        d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm11-6h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6h-4V5h4v4zm-9 4H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6H5v-4h4v4zm8-6c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z">
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z">
                     </path>
                 </svg>
                 <span class="side-menu__label">Add Post</span>
@@ -64,10 +68,11 @@
         <li class="side-item side-item-category">Services</li>
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('addservice') }}">
-                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="24" height="24"
-                    viewbox="0 0 24 24">
+                <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
                     <path
-                        d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm11-6h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6h-4V5h4v4zm-9 4H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6H5v-4h4v4zm8-6c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z">
+                        d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z">
                     </path>
                 </svg>
                 <span class="side-menu__label">Add Service</span>
@@ -76,10 +81,12 @@
         <li class="side-item side-item-category">Messages</li>
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('form') }}">
-                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="24" height="24"
-                    viewbox="0 0 24 24">
+                <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24">
+                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                    <path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity=".3"></path>
                     <path
-                        d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm11-6h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6h-4V5h4v4zm-9 4H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6H5v-4h4v4zm8-6c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z">
+                        d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z">
                     </path>
                 </svg>
                 <span class="side-menu__label">Messages</span>

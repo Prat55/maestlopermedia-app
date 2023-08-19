@@ -73,16 +73,16 @@
                 </div>
             </div>
         </div>
-        {{-- <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12">
+        <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12">
             <div class="card overflow-hidden dash1-card border-0 dash3">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-6">
                             <div class="">
-                                <span class="fs-14">Total Income</span>
-                                <h2 class="mb-2 mt-1 number-font carn2 font-weight-bold">$2,590</h2>
-                                <span class=""><i class="fa fa-circle-arrow-up"></i> 62% <span class="ms-1 fs-11">From
-                                        Last Month</span>
+                                <span class="fs-14">Total Messages</span>
+                                <h2 class="mb-2 mt-1 number-font carn2 font-weight-bold">{{ $forms->count() }}</h2>
+                                <span class="">
+                                    <i class="fa fa-circle-arrow-up"></i>
                                 </span>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12">
+        {{-- <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12">
             <div class="card overflow-hidden dash1-card border-0 dash4">
                 <div class="card-body">
                     <div class="row">
@@ -150,7 +150,7 @@
                             <a href="/admin/message/{{ $form->id }}">
                                 <li class="mb-5 mt-5">
                                     <div>
-                                        <span class="activity-timeline bg-primary text-white">{{  }}</span>
+                                        <span class="activity-timeline bg-primary text-white">{{ $form->name[0] }}</span>
                                         <div class="activity-timeline-content">
                                             <span class="font-weight-normal1 fs-13">{{ $form->name }}</span><span
                                                 class="text-muted fs-12 float-end">{{ $form->time }}</span>

@@ -6,6 +6,10 @@
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">Message</h4>
         </div>
+
+        <div class="page-rightheader">
+            <h4 class="page-title mb-0 text-primary"><a href="{{ route('form') }}" class="btn btn-primary">Back</a></h4>
+        </div>
     </div>
     <!--End Page header-->
 
@@ -21,11 +25,11 @@
                             <div class="media-body pt-0">
                                 <div class="float-end d-none d-md-flex fs-15">
                                     <small class="me-3 mt-3 text-muted">{{ $forms->created_at }}</small>
-                                    <a class="me-3 email-icon bg-danger-transparent" data-bs-toggle="tooltip" title=""
+                                    {{-- <a class="me-3 email-icon bg-danger-transparent" data-bs-toggle="tooltip" title=""
                                         data-original-title="Rated"><i class="text-danger fa fa-trash fs-16"></i></a>
                                     <a class="me-3 email-icon bg-success-transparent" data-bs-toggle="tooltip"
                                         title="" data-original-title="Reply"><i
-                                            class="text-success fa fa-reply"></i></a>
+                                            class="text-success fa fa-reply"></i></a> --}}
 
                                 </div>
                                 <div class="media-title font-weight-semibold mt-1">
@@ -41,7 +45,10 @@
                     <div class="eamil-body mt-5">
                         <h6>Hi Sir/Madam</h6>
                         <p>
-                            {{ $forms->message }}
+                            Subject: {{ $forms->service->service }}
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $forms->message }}
                         </p>
                         <p class="mb-0">Yours,</p>
                         <p>

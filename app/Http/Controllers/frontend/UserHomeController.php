@@ -13,7 +13,8 @@ class UserHomeController extends Controller
     protected function index()
     {
         $posts = Post::latest()->take(10)->get();
-        return view('frontend.home')->with('posts', $posts);
+        $services = Service::all();
+        return view('frontend.home')->with('posts', $posts)->with('services', $services);
     }
 
     protected function about()
