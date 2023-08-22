@@ -31,7 +31,7 @@ class AdminHomeController extends Controller
         $posts = Post::latest()->take(10)->get();
         return view('admin.featuredpost')->with('posts', $posts);
     }
-
+a
     protected function form()
     {
         $forms = Form::latest()->paginate(10);
