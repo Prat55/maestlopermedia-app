@@ -83,8 +83,8 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="text-center mb-5">
-                                        <img src="{{ asset('user-assets/images/logos/logomm.png') }}"
-                                           height="150px" width="200px" class="header-brand-img desktop-lgo" alt="Azea logo">
+                                        <img src="{{ asset('user-assets/images/logos/logomm.png') }}" height="150px"
+                                            width="200px" class="header-brand-img desktop-lgo" alt="Azea logo">
                                     </div>
 
                                     <div class="card">

@@ -337,66 +337,6 @@
             </div>
         </div>
         <div class="project-three-active">
-            {{-- <div class="project-item style-two wow fadeInUp delay-0-2s">
-                <div class="project-iamge">
-                    <img src="{{ asset('user-assets/myimages/services/img4.png') }}" alt="Project" />
-                    <div class="project-over">
-                        <a class="details-btn" href="https://gaavthiwood.in/" target="_blank"><i
-                                class="far fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h4>
-                        <a href="https://gaavthiwood.in/" target="_blank">Rosh Makeover</a>
-                    </h4>
-                    <span class="category">Design Responsive</span>
-                </div>
-            </div>
-            <div class="project-item style-two wow fadeInUp delay-0-4s">
-                <div class="project-iamge">
-                    <img src="{{ asset('user-assets/myimages/services/img3.png') }}" alt="Project" />
-                    <div class="project-over">
-                        <a class="details-btn" href="https://saileelahospital.com/"><i
-                                class="far fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h4>
-                        <a href="https://saileelahospital.com/" target="_blank">Saileela</a>
-                    </h4>
-                    <span class="category">Design Responsive</span>
-                </div>
-            </div>
-            <div class="project-item style-two wow fadeInUp delay-0-6s">
-                <div class="project-iamge">
-                    <img src="{{ asset('user-assets/myimages/services/img2.png') }}" alt="Project" />
-                    <div class="project-over">
-                        <a class="details-btn" href="https://businesscommunicate.agency/" target="_blank"><i
-                                class="far fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h4>
-                        <a href="https://businesscommunicate.agency/">Business Communicate</a>
-                    </h4>
-                    <span class="category">Design Responsive</span>
-                </div>
-            </div>
-            <div class="project-item style-two wow fadeInUp delay-0-8s">
-                <div class="project-iamge">
-                    <img src="{{ asset('user-assets/myimages/services/img1.png') }}" alt="Project" />
-                    <div class="project-over">
-                        <a class="details-btn" href="https://capitolinefinance.site/"><i
-                                class="far fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h4>
-                        <a href="https://capitolinefinance.site/" target="_blank">Capitoline Finance</a>
-                    </h4>
-                    <span class="category">Design Responsive</span>
-                </div>
-            </div> --}}
             @foreach ($posts as $post)
                 <div class="project-item style-two wow fadeInUp delay-0-8s">
                     <div class="project-iamge">
