@@ -18,16 +18,16 @@
             </div>
         </div>
         <!-- <div class="banner-shapes">
-                                        <div class="circle wow zoomInLeft delay-0-2s" data-wow-duration="2s"></div>
-                                        <img class="shape-one" src="assets/images/shapes/hero-shape1.png" alt="Shape" />
-                                        <img class="shape-two" src="assets/images/shapes/hero-shape2.png" alt="Shape" />
-                                      </div>
-                                      <div class="slider-shapes">
-                                        <img class="shape dots one" src="assets/images/shapes/slider-dots.png" alt="Shape" />
-                                        <img class="shape dots two" src="assets/images/shapes/slider-dots.png" alt="Shape" />
-                                        <img class="shape wave-line" src="assets/images/shapes/slider-wave-line.png" alt="Shape" />
-                                        <img class="shape circle" src="assets/images/shapes/slider-circle.png" alt="Shape" />
-                                      </div> -->
+                                                    <div class="circle wow zoomInLeft delay-0-2s" data-wow-duration="2s"></div>
+                                                    <img class="shape-one" src="assets/images/shapes/hero-shape1.png" alt="Shape" />
+                                                    <img class="shape-two" src="assets/images/shapes/hero-shape2.png" alt="Shape" />
+                                                  </div>
+                                                  <div class="slider-shapes">
+                                                    <img class="shape dots one" src="assets/images/shapes/slider-dots.png" alt="Shape" />
+                                                    <img class="shape dots two" src="assets/images/shapes/slider-dots.png" alt="Shape" />
+                                                    <img class="shape wave-line" src="assets/images/shapes/slider-wave-line.png" alt="Shape" />
+                                                    <img class="shape circle" src="assets/images/shapes/slider-circle.png" alt="Shape" />
+                                                  </div> -->
     </section>
     <!-- Page Banner End -->
 
@@ -73,11 +73,11 @@
                             </div>
                         </div>
                         <!-- <div class="ww-do-btns">
-                                                <a href="about.html" class="theme-btn mt-15">Create Your Website
-                                                  <i class="fas fa-angle-double-right"></i></a>
-                                                <a href="https://www.youtube.com/watch?v=9Y7ma241N8k" class="mfp-iframe video-play-text mt-15"><i
-                                                    class="fas fa-play"></i> <span>Watch Videos</span></a>
-                                              </div> -->
+                                                            <a href="about.html" class="theme-btn mt-15">Create Your Website
+                                                              <i class="fas fa-angle-double-right"></i></a>
+                                                            <a href="https://www.youtube.com/watch?v=9Y7ma241N8k" class="mfp-iframe video-play-text mt-15"><i
+                                                                class="fas fa-play"></i> <span>Watch Videos</span></a>
+                                                          </div> -->
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -104,6 +104,28 @@
         </div>
     </section>
     <!-- What We Do Two Area end -->
+
+    {{-- Owner Inforrmation Start --}}
+    <section class="ww-do-two-area py-130 rel z-1">
+        <div class=" text-center ">
+            <img class="d-block mx-auto mb-4" src="{{ asset('user-assets/images/about/swastik sir.jpg') }}" alt="Swastik Sir" width="300px" height="380px">
+            <h1 class="display-5 fw-bold">Swastik Nitin Lokhande</h1>
+            <h5 class="mb-20">Founder & Director At Maestloper Media</h5>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Maestloper Media was founded in 2017 as a result of the innovative leadership of
+                    Websit's CEO and founder, Swastik Nitin Lokhande. He founded the first software company ever in Boisar,
+                    Maharashtra, with a strong enthusiasm for innovation. The success of Websit is a direct result of
+                    Swastik's leadership, which positions the company as a pioneer in the technology field, constantly
+                    establishing new standards and pushing forward with innovation.
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-danger"><a
+                            href="https://www.instagram.com/__swag_lokhande__/">Instagram</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- Owner Inforrmation End --}}
 
     <!-- Statistics Four Area start -->
     <div class="statistics-area-four rel z-1">
