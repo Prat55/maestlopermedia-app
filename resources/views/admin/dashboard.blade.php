@@ -80,7 +80,7 @@
                         <div class="col-md-6 col-sm-6 col-6">
                             <div class="">
                                 <span class="fs-14">Total Messages</span>
-                                <h2 class="mb-2 mt-1 number-font carn2 font-weight-bold">{{ $forms->count() }}</h2>
+                                <h2 class="mb-2 mt-1 number-font carn2 font-weight-bold">{{ $messages->count() }}</h2>
                                 <span class="">
                                     <i class="fa fa-circle-arrow-up"></i>
                                 </span>
