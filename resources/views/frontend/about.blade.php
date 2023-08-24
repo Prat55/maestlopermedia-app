@@ -102,7 +102,7 @@
                     Swastik's leadership, which positions the company as a pioneer in the technology field, constantly
                     establishing new standards and pushing forward with innovation.
                 </p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-center">
+                <div class="d-grid gap-2 d-flex justify-content-center">
                     <a href="https://www.instagram.com/__swag_lokhande__/" class="pe-2"><svg
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 132.004 132" height="50px" width="50px">
