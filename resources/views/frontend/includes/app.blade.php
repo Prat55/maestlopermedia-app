@@ -8,52 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="title"
-        content="Digital marketing agency in Boisar,Marketing services in Palghar,Top digital agency in Boisar,Result-driven marketing Palghar,
-Expert SEO agency Boisar,
-Palghar online marketing solutions,
-Trusted marketing agency Boisar,
-Innovative digital solutions Palghar,
-Boisar SEO and marketing services,
- Local marketing agency in Palghar,
- Boisar social media marketing,
- Effective SEO services Palghar,
- Creative marketing solutions Boisar,
- Palghar web development and SEO,
- Professional marketing agency in Boisar,
- IT solutions in Boisar,
- IT consulting Palghar,
- Boisar technology solutions,
- Palghar software development agency,
- Reliable IT services Boisar,
- IT infrastructure Palghar,
- Boisar IT support services,
- Palghar cloud computing solutions,
- Custom software Boisar,
- IT solutions provider Palghar">
+        content="Digital marketing agency in Boisar,Marketing services in Palghar,Top digital agency in Boisar,Result-driven marketing Palghar,Expert SEO agency Boisar,Palghar online marketing solutions,Trusted marketing agency Boisar,Innovative digital solutions Palghar,Boisar SEO and marketing services, Local marketing agency in Palghar, Boisar social media marketing, Effective SEO services Palghar, Creative marketing solutions Boisar, Palghar web development and SEO, Professional marketing agency in Boisar, IT solutions in Boisar, IT consulting Palghar, Boisar technology solutions, Palghar software development agency, Reliable IT services Boisar, IT infrastructure Palghar, Boisar IT support services, Palghar cloud computing solutions, Custom software Boisar, IT solutions provider Palghar">
 
     <meta name="keywords"
-        content="Digital marketing agency in Boisar,Marketing services in Palghar,Top digital agency in Boisar,Result-driven marketing Palghar,
-Expert SEO agency Boisar,
-Palghar online marketing solutions,
-Trusted marketing agency Boisar,
-Innovative digital solutions Palghar,
-Boisar SEO and marketing services,
- Local marketing agency in Palghar,
- Boisar social media marketing,
- Effective SEO services Palghar,
- Creative marketing solutions Boisar,
- Palghar web development and SEO,
- Professional marketing agency in Boisar,
- IT solutions in Boisar,
- IT consulting Palghar,
- Boisar technology solutions,
- Palghar software development agency,
- Reliable IT services Boisar,
- IT infrastructure Palghar,
- Boisar IT support services,
- Palghar cloud computing solutions,
- Custom software Boisar,
- IT solutions provider Palghar">
+        content="Digital marketing agency in Boisar,Marketing services in Palghar,Top digital agency in Boisar,Result-driven marketing Palghar,Expert SEO agency Boisar,Palghar online marketing solutions,Trusted marketing agency Boisar,Innovative digital solutions Palghar,Boisar SEO and marketing services, Local marketing agency in Palghar, Boisar social media marketing, Effective SEO services Palghar, Creative marketing solutions Boisar, Palghar web development and SEO, Professional marketing agency in Boisar, IT solutions in Boisar, IT consulting Palghar, Boisar technology solutions, Palghar software development agency, Reliable IT services Boisar, IT infrastructure Palghar, Boisar IT support services, Palghar cloud computing solutions, Custom software Boisar, IT solutions provider Palghar">
+
+    <meta name="description"
+        content="Digital marketing agency in Boisar,Marketing services in Palghar,Top digital agency in Boisar,Result-driven marketing Palghar,Expert SEO agency Boisar,Palghar online marketing solutions,Trusted marketing agency Boisar,Innovative digital solutions Palghar,Boisar SEO and marketing services, Local marketing agency in Palghar, Boisar social media marketing, Effective SEO services Palghar, Creative marketing solutions Boisar, Palghar web development and SEO, Professional marketing agency in Boisar, IT solutions in Boisar, IT consulting Palghar, Boisar technology solutions, Palghar software development agency, Reliable IT services Boisar, IT infrastructure Palghar, Boisar IT support services, Palghar cloud computing solutions, Custom software Boisar, IT solutions provider Palghar">
 
     <!-- Title -->
     <title>Maestloper Media || @yield('title')</title>
