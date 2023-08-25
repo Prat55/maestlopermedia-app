@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 
 class AdminHomeController extends Controller
-{   
+{
     protected function index()
     {
         $posts = Post::all();
