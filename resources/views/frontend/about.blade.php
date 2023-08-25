@@ -38,7 +38,7 @@
                             Welcome to Maestloper Media, where innovation meets seamless
                             solutions. As a leading digital service provider, we are your
                             partners in navigating the dynamic landscape of the digital
-             
+
                             world. From cutting-edge web development and mobile app
                             solutions to robust cloud services and digital marketing
                             strategies, we deliver tailored experiences that resonate with
@@ -102,168 +102,168 @@
     {{-- Owner Inforrmation Start --}}
 
 
-<!-- 
+    <!--
 
 
 
-    <section class="ww-do-two-area pb-4 rel z-1">
-        <div class=" text-center ">
-            <img class="d-block mx-auto mb-4" src="{{ asset('user-assets/images/about/swastik sir.jpg') }}"
-                alt="Swastik Sir" width="300px" height="380px">
-            <h1 class="display-5 fw-bold">Swastik Nitin Lokhande</h1>
-            <h5 class="mb-20">Founder & Director At Maestloper Media</h5>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4 p-4">Maestloper Media was founded in 2017 as a result of the innovative leadership of
-                    Websit's CEO and founder, Swastik Nitin Lokhande. He founded the first software company ever in Boisar,
-                    Maharashtra, with a strong enthusiasm for innovation. The success of Websit is a direct result of
-                    Swastik's leadership, which positions the company as a pioneer in the technology field, constantly
-                    establishing new standards and pushing forward with innovation.
-                </p>
-                <div class="d-grid gap-2 d-flex justify-content-center">
-                    <a href="https://www.instagram.com/__swag_lokhande__/" class="pe-2"><svg
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 0 132.004 132" height="50px" width="50px">
-                            <defs>
-                                <linearGradient id="b">
-                                    <stop offset="0" stop-color="#3771c8" />
-                                    <stop stop-color="#3771c8" offset=".128" />
-                                    <stop offset="1" stop-color="#60f" stop-opacity="0" />
-                                </linearGradient>
-                                <linearGradient id="a">
-                                    <stop offset="0" stop-color="#fd5" />
-                                    <stop offset=".1" stop-color="#fd5" />
-                                    <stop offset=".5" stop-color="#ff543e" />
-                                    <stop offset="1" stop-color="#c837ab" />
-                                </linearGradient>
-                                <radialGradient id="c" cx="158.429" cy="578.088" r="65" xlink:href="#a"
-                                    gradientUnits="userSpaceOnUse"
-                                    gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.402 454.004)" fx="158.429"
-                                    fy="578.088" />
-                                <radialGradient id="d" cx="147.694" cy="473.455" r="65" xlink:href="#b"
-                                    gradientUnits="userSpaceOnUse"
-                                    gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.348 -458.493)"
-                                    fx="1" fy="473.455" />
-                            </defs>
-                            <path fill="url(#c)"
-                                d="M65.03 0C37.888 0 29.95.028 28.407.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468C4 13.126 1.5 18.394.595 24.656c-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28 7.79-2.01 14.24-7.29 17.75-14.53 1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624C116.9 4 111.64 1.5 105.372.596 102.335.157 101.73.027 86.19 0H65.03z"
-                                transform="translate(1.004 1)" />
-                            <path fill="url(#d)"
-                                d="M65.03 0C37.888 0 29.95.028 28.407.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468C4 13.126 1.5 18.394.595 24.656c-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28 7.79-2.01 14.24-7.29 17.75-14.53 1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624C116.9 4 111.64 1.5 105.372.596 102.335.157 101.73.027 86.19 0H65.03z"
-                                transform="translate(1.004 1)" />
-                            <path fill="#fff"
-                                d="M66.004 18c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C18.06 51.327 18 52.964 18 66s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29 19.79.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97c-3.18 0-5.76 2.577-5.76 5.758 0 3.18 2.58 5.76 5.76 5.76 3.18 0 5.76-2.58 5.76-5.76 0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C79.617 90.645 90.65 79.613 90.65 66S79.616 41.35 66.003 41.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z" />
-                        </svg></a>
-                    <a href="https://twitter.com/swaglokhande?s=20" class="pe-2"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333333 333333"
-                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
-                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" height="50px"
-                            width="50px">
-                            <path
-                                d="M333328 63295c-12254 5480-25456 9122-39241 10745 14123-8458 24924-21861 30080-37819-13200 7807-27871 13533-43416 16596-12499-13281-30252-21537-49919-21537-37762 0-68336 30591-68336 68330 0 5326 591 10537 1748 15562-56820-2880-107194-30081-140915-71467-6049 10435-9250 22300-9250 34367v8c0 23696 12031 44654 30389 56876-11202-333-21739-3457-30991-8519v854c0 33138 23554 60789 54852 67039-5734 1557-11787 2417-18023 2417-4417 0-8673-455-12905-1224 8742 27139 33975 46923 63857 47500-23430 18356-52858 29286-84939 29286-5537 0-10931-339-16318-984 30326 19458 66251 30727 104844 30727 125735 0 194551-104198 194551-194543 0-3002-67-5911-191-8852 13354-9553 24932-21609 34097-35333l31-31-6 4z"
-                                fill="#1da1f2" />
-                        </svg></a>
-                    <a href="https://www.facebook.com/swastik.lokhande.7?mibextid=ZbWKwL" class="pe-2"><svg
-                            id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 506.86 506.86" height="50px" width="50px">
-                            <defs>
-                                <style>
-                                    .cls-1 {
-                                        fill: #1877f2;
-                                    }
+            <section class="ww-do-two-area pb-4 rel z-1">
+                <div class=" text-center ">
+                    <img class="d-block mx-auto mb-4" src="{{ asset('user-assets/images/about/swastik sir.jpg') }}"
+                        alt="Swastik Sir" width="300px" height="380px">
+                    <h1 class="display-5 fw-bold">Swastik Nitin Lokhande</h1>
+                    <h5 class="mb-20">Founder & Director At Maestloper Media</h5>
+                    <div class="col-lg-6 mx-auto">
+                        <p class="lead mb-4 p-4">Maestloper Media was founded in 2017 as a result of the innovative leadership of
+                            Websit's CEO and founder, Swastik Nitin Lokhande. He founded the first software company ever in Boisar,
+                            Maharashtra, with a strong enthusiasm for innovation. The success of Websit is a direct result of
+                            Swastik's leadership, which positions the company as a pioneer in the technology field, constantly
+                            establishing new standards and pushing forward with innovation.
+                        </p>
+                        <div class="d-grid gap-2 d-flex justify-content-center">
+                            <a href="https://www.instagram.com/__swag_lokhande__/" class="pe-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 132.004 132" height="50px" width="50px">
+                                    <defs>
+                                        <linearGradient id="b">
+                                            <stop offset="0" stop-color="#3771c8" />
+                                            <stop stop-color="#3771c8" offset=".128" />
+                                            <stop offset="1" stop-color="#60f" stop-opacity="0" />
+                                        </linearGradient>
+                                        <linearGradient id="a">
+                                            <stop offset="0" stop-color="#fd5" />
+                                            <stop offset=".1" stop-color="#fd5" />
+                                            <stop offset=".5" stop-color="#ff543e" />
+                                            <stop offset="1" stop-color="#c837ab" />
+                                        </linearGradient>
+                                        <radialGradient id="c" cx="158.429" cy="578.088" r="65" xlink:href="#a"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.402 454.004)" fx="158.429"
+                                            fy="578.088" />
+                                        <radialGradient id="d" cx="147.694" cy="473.455" r="65" xlink:href="#b"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.348 -458.493)"
+                                            fx="1" fy="473.455" />
+                                    </defs>
+                                    <path fill="url(#c)"
+                                        d="M65.03 0C37.888 0 29.95.028 28.407.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468C4 13.126 1.5 18.394.595 24.656c-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28 7.79-2.01 14.24-7.29 17.75-14.53 1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624C116.9 4 111.64 1.5 105.372.596 102.335.157 101.73.027 86.19 0H65.03z"
+                                        transform="translate(1.004 1)" />
+                                    <path fill="url(#d)"
+                                        d="M65.03 0C37.888 0 29.95.028 28.407.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468C4 13.126 1.5 18.394.595 24.656c-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28 7.79-2.01 14.24-7.29 17.75-14.53 1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624C116.9 4 111.64 1.5 105.372.596 102.335.157 101.73.027 86.19 0H65.03z"
+                                        transform="translate(1.004 1)" />
+                                    <path fill="#fff"
+                                        d="M66.004 18c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C18.06 51.327 18 52.964 18 66s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29 19.79.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97c-3.18 0-5.76 2.577-5.76 5.758 0 3.18 2.58 5.76 5.76 5.76 3.18 0 5.76-2.58 5.76-5.76 0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C79.617 90.645 90.65 79.613 90.65 66S79.616 41.35 66.003 41.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z" />
+                                </svg></a>
+                            <a href="https://twitter.com/swaglokhande?s=20" class="pe-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333333 333333"
+                                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                    image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" height="50px"
+                                    width="50px">
+                                    <path
+                                        d="M333328 63295c-12254 5480-25456 9122-39241 10745 14123-8458 24924-21861 30080-37819-13200 7807-27871 13533-43416 16596-12499-13281-30252-21537-49919-21537-37762 0-68336 30591-68336 68330 0 5326 591 10537 1748 15562-56820-2880-107194-30081-140915-71467-6049 10435-9250 22300-9250 34367v8c0 23696 12031 44654 30389 56876-11202-333-21739-3457-30991-8519v854c0 33138 23554 60789 54852 67039-5734 1557-11787 2417-18023 2417-4417 0-8673-455-12905-1224 8742 27139 33975 46923 63857 47500-23430 18356-52858 29286-84939 29286-5537 0-10931-339-16318-984 30326 19458 66251 30727 104844 30727 125735 0 194551-104198 194551-194543 0-3002-67-5911-191-8852 13354-9553 24932-21609 34097-35333l31-31-6 4z"
+                                        fill="#1da1f2" />
+                                </svg></a>
+                            <a href="https://www.facebook.com/swastik.lokhande.7?mibextid=ZbWKwL" class="pe-2"><svg
+                                    id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 506.86 506.86" height="50px" width="50px">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #1877f2;
+                                            }
 
-                                    .cls-2 {
-                                        fill: #fff;
-                                    }
-                                </style>
-                            </defs>
-                            <title>facebook-round-color</title>
-                            <path class="cls-1"
-                                d="M506.86,253.43C506.86,113.46,393.39,0,253.43,0S0,113.46,0,253.43C0,379.92,92.68,484.77,213.83,503.78V326.69H149.48V253.43h64.35V197.6c0-63.52,37.84-98.6,95.72-98.6,27.73,0,56.73,5,56.73,5v62.36H334.33c-31.49,0-41.3,19.54-41.3,39.58v47.54h70.28l-11.23,73.26H293V503.78C414.18,484.77,506.86,379.92,506.86,253.43Z" />
-                            <path class="cls-2"
-                                d="M352.08,326.69l11.23-73.26H293V205.89c0-20,9.81-39.58,41.3-39.58h31.95V104s-29-5-56.73-5c-57.88,0-95.72,35.08-95.72,98.6v55.83H149.48v73.26h64.35V503.78a256.11,256.11,0,0,0,79.2,0V326.69Z" />
-                        </svg></a>
+                                            .cls-2 {
+                                                fill: #fff;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>facebook-round-color</title>
+                                    <path class="cls-1"
+                                        d="M506.86,253.43C506.86,113.46,393.39,0,253.43,0S0,113.46,0,253.43C0,379.92,92.68,484.77,213.83,503.78V326.69H149.48V253.43h64.35V197.6c0-63.52,37.84-98.6,95.72-98.6,27.73,0,56.73,5,56.73,5v62.36H334.33c-31.49,0-41.3,19.54-41.3,39.58v47.54h70.28l-11.23,73.26H293V503.78C414.18,484.77,506.86,379.92,506.86,253.43Z" />
+                                    <path class="cls-2"
+                                        d="M352.08,326.69l11.23-73.26H293V205.89c0-20,9.81-39.58,41.3-39.58h31.95V104s-29-5-56.73-5c-57.88,0-95.72,35.08-95.72,98.6v55.83H149.48v73.26h64.35V503.78a256.11,256.11,0,0,0,79.2,0V326.69Z" />
+                                </svg></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section> -->
-
-
-
-
-
-
-
-
-
-
-
+            </section> -->
 
     //rajesh
- <section class="text-gray-600 body-font">
+    <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
-          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-            <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-              <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg> -->
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div
+                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg> -->
 
-              <img src="https://maestlopermedia.com/user-assets/images/about/swastik sir.jpg" alt="">
+                    <img src="https://maestlopermedia.com/user-assets/images/about/swastik sir.jpg" alt="">
+                </div>
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Swastik Nitin Lokhande</h2>
+                    <p class="leading-relaxed text-base">E-mail: <a href="mailto:info@maestlopermedia.com"
+                            id="email">mailto:info@maestlopermedia.com</a></p>
+                    <a class="mt-3 text-indigo-500 inline-flex items-center" href="callto:+91 8149972219">Phone: +91
+                        8149972219
+                        <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg> -->
+                    </a>
+                    <br>
+                    <br>
+                    <span><a href="https://in.linkedin.com/company/maestloper-media"> <i class="fa-brands fa-linkedin">
+                            </i></a> </span>
+
+                    &nbsp;&nbsp;
+                    <span> <a href="https://twitter.com/swaglokhande?s=20"> <i
+                                class="fa-brands fa-twitter"></i></a></span>
+                    &nbsp;&nbsp;
+                    <span> <a href="https://www.instagram.com/__swag_lokhande__/"> <i
+                                class="fa-brands fa-instagram"></i></a></span>
+
+                    &nbsp;&nbsp;
+                    <span> <a href="https://www.facebook.com/swastik.lokhande.7?mibextid=ZbWKwL"><i
+                                class="fa-brands fa-facebook"></i></a></span>
+                </div>
             </div>
-            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Swastik Nitin Lokhande</h2>
-              <p class="leading-relaxed text-base">E-mail: <a href="mailto:info@maestlopermedia.com" id="email">mailto:info@maestlopermedia.com</a></p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center" href="callto:+91 8149972219">Phone: +91
-                8149972219
-                <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg> -->
-              </a>
-              <br>
-              <br>
-              <span><a href="https://in.linkedin.com/company/maestloper-media"> <i class="fa-brands fa-linkedin"> </i></a> </span>
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">About Me</h2>
+                    <p class="leading-relaxed text-base">Maestloper Media was founded in 2017 as a result of the innovative
+                        leadership of Websit's CEO and founder, Swastik Nitin Lokhande. He founded the first software
+                        company ever in Boisar, Maharashtra, with a strong enthusiasm for innovation. The success of Websit
+                        is a direct result of Swastik's leadership, which positions the company as a pioneer in the
+                        technology field, constantly establishing new standards and pushing forward with innovation.</p>
 
-              &nbsp;&nbsp;
-              <span> <a href="https://twitter.com/swaglokhande?s=20"> <i class="fa-brands fa-twitter"></i></a></span>
-              &nbsp;&nbsp;
-              <span> <a href="https://www.instagram.com/__swag_lokhande__/"> <i class="fa-brands fa-instagram"></i></a></span>
+                </div>
 
-              &nbsp;&nbsp;
-              <span> <a href="https://www.facebook.com/swastik.lokhande.7?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a></span>
             </div>
-          </div>
-          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">About Me</h2>
-              <p class="leading-relaxed text-base">Maestloper Media was founded in 2017 as a result of the innovative leadership of Websit's CEO and founder, Swastik Nitin Lokhande. He founded the first software company ever in Boisar, Maharashtra, with a strong enthusiasm for innovation. The success of Websit is a direct result of Swastik's leadership, which positions the company as a pioneer in the technology field, constantly establishing new standards and pushing forward with innovation.</p>
-             
+
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Background & Expriement</h2>
+                    <p class="leading-relaxed text-base">Maestloper Media Completed more Than Four Years in Digital
+                        Services.
+                        <br>
+                    <p>Project Done, Goals Achieved, Ready For Next Steps.</p>
+
+                    <p>350+ projects are done...</p>
+                    </p>
+
+                    <br>
+                    <li>Web developer</li>
+                    <li>Software Developer</li>
+                    <li> Graphics Designer</li>
+                    <li>videographer</li>
+                    <li>UI/UX Developer</li>
+                    <!-- <li>content writer</li> -->
+                </div>
+
             </div>
-           
-          </div>
-
-          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Background & Expriement</h2>
-              <p class="leading-relaxed text-base">Maestloper Media Completed more Than Four Years in Digital Services.
-                <br>
-                <p>Project Done, Goals Achieved, Ready For Next Steps.</p>
-                
-                <p>350+ projects are done...</p>
-              </p>
-
-              <br>
-              <li>Web developer</li>
-              <li>Software Developer</li>
-              <li> Graphics Designer</li>
-              <li>videographer</li>
-              <li>UI/UX Developer</li>
-              <!-- <li>content writer</li> -->
-            </div>
-           
-          </div>
 
 
-        
-      </section>
+
+    </section>
 
     //rajesh end
 
