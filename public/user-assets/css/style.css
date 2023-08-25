@@ -13955,8 +13955,14 @@ input.whats-input[type=text]:focus {
     margin: 0px 40px;
 }
 
+.slide img {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
 .fas {
-    color: #96bd0b;
+    color: #1e1c1c;
 }
 
 .slick-prev {
