@@ -38,6 +38,7 @@
                             Welcome to Maestloper Media, where innovation meets seamless
                             solutions. As a leading digital service provider, we are your
                             partners in navigating the dynamic landscape of the digital
+             
                             world. From cutting-edge web development and mobile app
                             solutions to robust cloud services and digital marketing
                             strategies, we deliver tailored experiences that resonate with
@@ -92,7 +93,19 @@
     </section>
     <!-- What We Do Two Area end -->
 
+
+
+
+
+
+
     {{-- Owner Inforrmation Start --}}
+
+
+<!-- 
+
+
+
     <section class="ww-do-two-area pb-4 rel z-1">
         <div class=" text-center ">
             <img class="d-block mx-auto mb-4" src="{{ asset('user-assets/images/about/swastik sir.jpg') }}"
@@ -172,8 +185,95 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    //rajesh
+ <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+            <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+              <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg> -->
+
+              <img src="https://maestlopermedia.com/user-assets/images/about/swastik sir.jpg" alt="">
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Swastik Nitin Lokhande</h2>
+              <p class="leading-relaxed text-base">E-mail: <a href="mailto:info@maestlopermedia.com" id="email">mailto:info@maestlopermedia.com</a></p>
+              <a class="mt-3 text-indigo-500 inline-flex items-center" href="callto:+91 8149972219">Phone: +91
+                8149972219
+                <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg> -->
+              </a>
+              <br>
+              <br>
+              <span><a href="https://in.linkedin.com/company/maestloper-media"> <i class="fa-brands fa-linkedin"> </i></a> </span>
+
+              &nbsp;&nbsp;
+              <span> <a href="https://twitter.com/swaglokhande?s=20"> <i class="fa-brands fa-twitter"></i></a></span>
+              &nbsp;&nbsp;
+              <span> <a href="https://www.instagram.com/__swag_lokhande__/"> <i class="fa-brands fa-instagram"></i></a></span>
+
+              &nbsp;&nbsp;
+              <span> <a href="https://www.facebook.com/swastik.lokhande.7?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a></span>
+            </div>
+          </div>
+          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">About Me</h2>
+              <p class="leading-relaxed text-base">Maestloper Media was founded in 2017 as a result of the innovative leadership of Websit's CEO and founder, Swastik Nitin Lokhande. He founded the first software company ever in Boisar, Maharashtra, with a strong enthusiasm for innovation. The success of Websit is a direct result of Swastik's leadership, which positions the company as a pioneer in the technology field, constantly establishing new standards and pushing forward with innovation.</p>
+             
+            </div>
+           
+          </div>
+
+          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Background & Expriement</h2>
+              <p class="leading-relaxed text-base">Maestloper Media Completed more Than Four Years in Digital Services.
+                <br>
+                <p>Project Done, Goals Achieved, Ready For Next Steps.</p>
+                
+                <p>350+ projects are done...</p>
+              </p>
+
+              <br>
+              <li>Web developer</li>
+              <li>Software Developer</li>
+              <li> Graphics Designer</li>
+              <li>videographer</li>
+              <li>UI/UX Developer</li>
+              <!-- <li>content writer</li> -->
+            </div>
+           
+          </div>
+
+
+        
+      </section>
+
+    //rajesh end
+
+
     {{-- Owner Inforrmation End --}}
+
+
+
+
+
 
     <!-- Statistics Four Area start -->
     <div class="statistics-area-four rel z-1">
