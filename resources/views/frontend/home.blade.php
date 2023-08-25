@@ -622,8 +622,9 @@
                 alt="Shape" />
         </div>
     </section>
+    <!-- Contact Area End -->
 
-    {{-- * Brands Logo Section * --}}
+    {{-- * Brands Logo Section Start* --}}
     <section class="trigger section gutter-horizontal bg-gray gutter-vertical--m gutter-horizontal">
         <div class="customer-logos slider">
             <div class="slide-in-right slide"><img
@@ -668,5 +669,5 @@
                 </a>
             </div>
     </section>
-    <!-- Contact Area End -->
+    {{-- * Brands Logo Section End* --}}
 @endsection
