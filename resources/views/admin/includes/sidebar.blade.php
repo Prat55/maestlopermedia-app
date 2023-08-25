@@ -1,7 +1,7 @@
 <!--aside open-->
 <aside class="app-sidebar">
     <div class="app-sidebar__logo">
-        <a class="header-brand" href="index.php.html">
+        <a class="header-brand" href="{{ route('dashboard') }}">
             <img src="{{ asset('user-assets/images/logos/logomm.png') }}" class="header-brand-img desktop-lgo"
                 alt="Maestloper Media">
             <img src="{{ asset('user-assets/images/logos/logo-1.png') }}" class="header-brand-img dark-logo"

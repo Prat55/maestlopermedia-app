@@ -135,28 +135,10 @@
                                                         class="btn btn-primary btn-lg w-100 br-7 ">Log
                                                         In</button>
                                                 </div>
-                                                {{-- <div class="form-group fs-13 text-center">
-                                                    <a href="forgot-password-2.php.html">Forget Password ?</a>
-                                                </div>
-                                                <div class="form-group fs-14 text-center font-weight-bold">
-                                                    <a href="javascript:void(0);">Click Here To Backup Mail</a>
-                                                </div> --}}
                                             </form>
                                         </div>
 
                                     </div>
-                                </div>
-                                <div class="text-center register-icons">
-                                    {{-- <div class="small text-white mb-4">Login with</div>
-                                        <button
-                                            class="btn bg-white-50  text-white-50 font-weight-semibold w-12 google me-2"
-                                            type="button"><i class="fa fa-google"></i></button>
-                                        <button
-                                            class="btn bg-white-50  text-white-50 font-weight-semibold  w-12 facebook me-2"
-                                            type="button"><i class="fa fa-facebook-f"></i></button>
-                                        <button
-                                            class="btn bg-white-50  text-white-50 font-weight-semibold w-12 twitter me-2"
-                                            type="button"><i class="fa fa-twitter"></i></button> --}}
                                 </div>
                             </div>
                         </div>
