@@ -215,6 +215,8 @@
         <script src="{{ asset('user-assets/js/wow.min.js') }}"></script>
         <!-- Custom script -->
         <script src="{{ asset('user-assets/js/script.js') }}"></script>
+        {{-- Custom script2 --}}
+        <script src="{{ asset('user-assets/js/custom.js') }}"></script>
 </body>
 
 </html>
