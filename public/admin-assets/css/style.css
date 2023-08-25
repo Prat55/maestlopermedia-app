@@ -22999,18 +22999,21 @@ table {
 .table>tbody>tr>th {
     font-weight: 500;
     -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .table>tfoot>tr>td,
 .table>tfoot>tr>th {
     font-weight: 500;
     -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .table>thead>tr>td,
 .table>thead>tr>th {
     font-weight: 500;
     -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .table-responsive {
@@ -23019,7 +23022,17 @@ table {
 
 .table-responsive,
 .table {
+
     overflow-y: visible !important;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .table-responsive,
+    .table {
+        overflow-x: hidden;
+        overflow-y: visible !important;
+    }
 }
 
 .jvectormap-container {
@@ -26711,7 +26724,7 @@ input[type=time].form-control:hover {
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
 
 .selectize-control.multi .selectize-input>div {
@@ -52433,4 +52446,8 @@ Dimmer
     position: absolute;
     opacity: 1;
     top: 0;
+}
+
+.text-upper {
+    text-transform: uppercase;
 }

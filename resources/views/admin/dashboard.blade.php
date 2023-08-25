@@ -146,21 +146,26 @@
                 </div>
                 <div class="card-body p-0">
                     <ul class="recent-activity">
+
                         @foreach ($forms as $form)
-                            <a href="/admin/message/{{ $form->id }}">
-                                <li class="mb-5 mt-5">
-                                    <div>
-                                        <span class="activity-timeline bg-primary text-white">{{ $form->name[0] }}</span>
-                                        <div class="activity-timeline-content">
-                                            <span class="font-weight-normal1 fs-13">{{ $form->name }}</span><span
-                                                class="text-muted fs-12 float-end">{{ $form->time }}</span>
-                                            <span class="activity-sub-content text-info fs-11"></span>
-                                            <p class="text-muted fs-12 mt-1">For: {{ $form->service->service }}</p>
+                            @if ($form->date == $mytime)
+                                <a href="/admin/message/{{ $form->id }}">
+                                    <li class="mb-5 mt-5">
+                                        <div>
+                                            <span
+                                                class="activity-timeline bg-primary text-white text-upper">{{ $form->name[0] }}</span>
+                                            <div class="activity-timeline-content">
+                                                <span class="font-weight-normal1 fs-13">{{ $form->name }}</span><span
+                                                    class="text-muted fs-12 float-end">{{ $form->time }}</span>
+                                                <span class="activity-sub-content text-info fs-11"></span>
+                                                <p class="text-muted fs-12 mt-1">For: {{ $form->service->service }}</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </a>
+                                    </li>
+                                </a>
+                            @endif
                         @endforeach
+
                         {{-- <li class="mb-5">
                             <div>
                                 <span class="activity-timeline bg-success text-white">2</span>

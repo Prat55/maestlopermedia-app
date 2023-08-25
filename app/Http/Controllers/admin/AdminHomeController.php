@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Form;
 use App\Models\Post;
 use App\Models\Service;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
@@ -18,7 +19,8 @@ class AdminHomeController extends Controller
         $services = Service::all();
         $forms = Form::latest()->take(5)->get();
         $messages = Form::all();
-        return view('admin.dashboard')->with('posts', $posts)->with('services', $services)->with('forms', $forms)->with('messages', $messages);
+        $mytime = Carbon::now()->format('Y-m-d');
+        return view('admin.dashboard', compact('posts', 'services', 'forms', 'messages', 'mytime'));
     }
 
     protected function allposts()
