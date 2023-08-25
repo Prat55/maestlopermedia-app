@@ -19,7 +19,6 @@
                     <div class="row">
                         <form action="/admin/add" method="POST" enctype="multipart/form-data">
                             @csrf
-
                             <div class="col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <label class="form-label">Title<span class="text-red">*</span></label>
@@ -35,7 +34,7 @@
 
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-label">Image<span class="text-red">*</span></label>
+                                    <label class="form-label">Image<span class="text-red">* (410 X 270)</span></label>
                                     <input type="file" class="form-control" name="media" required>
                                 </div>
                             </div>
@@ -43,16 +42,15 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="form-label">Link (optional)</label>
-                                    <input type="url" class="form-control" name="link" placeholder="Link of post"
-                                        required>
+                                    <input type="url" class="form-control" name="link" placeholder="Link of post">
                                 </div>
                             </div>
 
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="form-label">Service Type <span class="text-red">*</span></label>
-                                    <select name="service" class="form-control custom-select select2" required>
-                                        <option value="0">--Select Service--</option>
+                                    <select required="" name="service" class="form-control custom-select select2">
+                                        <option value="">--Select Service--</option>
                                         @foreach ($services as $se)
                                             <option value="{{ $se->id }}">{{ $se->service }}</option>
                                         @endforeach

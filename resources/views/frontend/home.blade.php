@@ -20,7 +20,8 @@
                     </div>
                 </div>
                 <div class="slider-video"
-                    style="background-image: url('{{ asset('user-assets/myimages/services-img/7.jpg') }}')">
+                    style="background-image: url('{{ asset('user-assets/myimages/services-img/7.jpg') }}');
+                    width:731px;height:580px">
                     <span class="video-title cd-headline clip">
                         <span class="cd-words-wrapper">
                             <b class="is-visible">Web Designing</b>
@@ -43,7 +44,7 @@
                     </div>
                 </div>
                 <div class="slider-video"
-                    style="background-image: url('{{ asset('user-assets/images/slider/slide1.jpg') }}')">
+                    style="background-image: url('{{ asset('user-assets/images/slider/slide1.jpg') }}');width:731px;height:580px">
                     <span class="video-title cd-headline clip">
                         <span class="cd-words-wrapper">
                             <b class="is-visible">Graphics</b>
@@ -66,7 +67,7 @@
                     </div>
                 </div>
                 <div class="slider-video"
-                    style="background-image: url('{{ asset('user-assets/myimages/services-img/2.jpg') }}')">
+                    style="background-image: url('{{ asset('user-assets/myimages/services-img/2.jpg') }}');width:731px;height:580px">
                     <span class="video-title cd-headline clip">
                         <span class="cd-words-wrapper">
                             <b class="is-visible">Digital</b>
@@ -198,7 +199,7 @@
                 <div class="col-lg-6">
                     <div class="feature-middle rmt-30">
                         <div class="image wow fadeInUp delay-0-2s">
-                            <img class="round" src="{{ asset('user-assets/images/services/service-section-man.jpg') }}"
+                            <img class="round" src="{{ asset('user-assets/images/features/feature-middle.png') }}"
                                 alt="Feature Middle" />
                         </div>
                         <div class="row">
@@ -552,9 +553,11 @@
                                     <i class="fal fa-map-marker-alt"></i>
                                 </div>
                                 <div class="content">
-                                    <span class="title">Location</span>
-                                    <b class="text">Office No.23, Ostwal Wonder City, Betegao Boisar(E)
-                                        401501,Palghar, MH</b>
+                                    <a href="https://goo.gl/maps/sYzfysnGBPQYdnJUA">
+                                        <span class="title">Location</span>
+                                        <b class="text">Office No.23, Ostwal Wonder City, Betegao Boisar(E)
+                                            401501,Palghar, MH</b>
+                                    </a>
                                 </div>
                             </div>
                             <div class="contact-info-item">
@@ -630,7 +633,7 @@
     <section class="trigger section gutter-horizontal bg-gray gutter-vertical--m gutter-horizontal">
         <div class="customer-logos slider">
             <div class="slide-in-right slide">
-                <img src="{{ asset('user-assets/images/client2/1.png') }}" alt="Kinderhotel Aschauerhof">
+                <img src="{{ asset('user-assets/images/client2/1.png') }}">
             </div>
             <div class="slide-in-right slide">
                 <img src="{{ asset('user-assets/images/client2/2.png') }}">
@@ -642,29 +645,29 @@
                 <img src="{{ asset('user-assets/images/client2/4.png') }}">
             </div>
             <div class="slide-in-right slide">
-                <img src="{{ asset('user-assets/images/client2/5.svg') }}" alt="Tannenmuehle">
+                <img src="{{ asset('user-assets/images/client2/5.png') }}">
             </div>
             <div class="slide-in-right slide">
-                <img src="{{ asset('user-assets/images/client2/6.png') }}" alt="Loeffele">
+                <img src="{{ asset('user-assets/images/client2/6.png') }}">
             </div>
             <div class="slide-in-right slide">
-                <img src="{{ asset('user-assets/images/client2/7.png') }}" alt="Krone">
+                <img src="{{ asset('user-assets/images/client2/7.png') }}">
             </div>
             <div class="slide-in-right slide">
-                <img src="{{ asset('user-assets/images/client2/8.png') }}" alt="Obereggen">
+                <img src="{{ asset('user-assets/images/client2/8.png') }}">
             </div>
             <div class="slide-in-right slide">
-                <img src="{{ asset('user-assets/images/client2/9.png') }}" alt="Ortnerhof">
+                <img src="{{ asset('user-assets/images/client2/9.png') }}">
             </div>
-            <div class="slide-in-right slide">
+            {{-- <div class="slide-in-right slide">
                 <img src="{{ asset('user-assets/images/client2/10.png') }}" alt="Ottonenhof" height="150px"
                     width="200px">
+            </div> --}}
+            <div class="slide-in-right slide">
+                <img src="{{ asset('user-assets/images/client2/11.png') }}">
             </div>
             <div class="slide-in-right slide">
-                <img src="{{ asset('user-assets/images/client2/11.png') }}" alt="Leiners">
-            </div>
-            <div class="slide-in-right slide">
-                <img src="{{ asset('user-assets/images/client2/12.png') }}" alt="Seitenalm">
+                <img src="{{ asset('user-assets/images/client2/12.png') }}">
             </div>
     </section>
     {{-- * Brands Logo Section End* --}}

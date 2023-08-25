@@ -25,12 +25,13 @@
         <div class="container">
             <div class="row justify-content-between align-items-end pb-30">
 
-                <div class="col-xl-12 text-xl-end">
+                <div class="col-xl-12 text-xl-center">
                     <ul class="project-filter filter-btns-one d-inline-flex mb-30 wow fadeInUp delay-0-4s">
-                        <li data-filter="*" class="current">All</li>
-
+                        {{-- <li data-filter="*" class="current">All</li> --}}
                         @foreach ($services as $serv)
-                            <li data-filter=".{{ $serv->slug }}">{{ $serv->service }}</li>
+                            <li data-filter=".{{ $serv->slug }}"
+                                class="{{ $serv->slug == 'website-designing' ? 'current' : '' }}">
+                                {{ $serv->service }}</li>
                         @endforeach
                         {{-- <li data-filter=".business">Business</li>
                         <li data-filter=".saas">Saas</li>

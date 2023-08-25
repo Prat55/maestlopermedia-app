@@ -52,6 +52,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     /> -->
+
+    @yield('links')
 </head>
 
 <body class="home-one">

@@ -1,6 +1,10 @@
 @extends('frontend.includes.app')
 @section('title', 'About Us')
+@section('links')
+    <style>
 
+    </style>
+@endsection
 @section('content')
     <!-- Page Banner Start -->
     <section class="page-banner-area pt-245 rpt-150 pb-170 rpb-100 rel z-1 bgc-lighter text-center bgc-black-with-lighting">
@@ -68,7 +72,7 @@
                         <div class="row">
                             <div class="col-sm-7 offset-1">
                                 <img class="image-one wow fadeInUp delay-0-4s"
-                                    src="https://maestloper-media1.netlify.app/assets/images/about.png" alt="What We Do" />
+                                    src="{{ asset('user-assets/images/about/about.png') }}" alt="What We Do" />
                             </div>
                             <div class="col-sm-4">
                                 <img class="image-two wow fadeInUp delay-0-6s"

@@ -57,7 +57,7 @@
     headerStyle();
 
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 50) {
+      if ($(this).scrollTop() > 100) {
         $(".logo1").removeClass("d-none");
         $(".logo2").addClass("d-none");
       } else {

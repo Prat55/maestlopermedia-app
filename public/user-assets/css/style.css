@@ -445,6 +445,7 @@ a.theme-btn i {
     -o-transition: 0.5s;
     transition: 0.5s;
     margin-left: 10px;
+    color: black;
 }
 
 .theme-btn:after,
@@ -4608,7 +4609,7 @@ h6,
 
 @media only screen and (min-width: 1200px) {
     .main-header .container {
-        max-width: 1555px;
+        max-width: 1330px;
     }
 }
 
@@ -5576,7 +5577,7 @@ h6,
 
 @media only screen and (min-width: 1200px) {
     #cont-slider {
-        max-width: 1550px;
+        max-width: 1330px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -13961,9 +13962,9 @@ input.whats-input[type=text]:focus {
     justify-content: center !important;
 }
 
-.fas {
-    color: #1e1c1c;
-}
+/* .fas {
+    color: #ffffff;
+} */
 
 .slick-prev {
     left: 0;
@@ -13983,4 +13984,12 @@ input.whats-input[type=text]:focus {
 .section {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+#email:hover {
+    color: #f4222c
+}
+
+.owner a:hover {
+    color: #f4222c
 }

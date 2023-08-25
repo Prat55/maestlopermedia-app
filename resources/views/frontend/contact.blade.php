@@ -114,8 +114,10 @@
                             </div>
                             <div class="content">
                                 <span class="title">Location</span>
-                                <span class="text">Office No.23, Ostwal Wonder City, Betegao Boisar(E)
-                                    401501,Palghar, MH</span>
+                                <a href="https://goo.gl/maps/sYzfysnGBPQYdnJUA" target="_blank">
+                                    <span class="text">Office No.23, Ostwal Wonder City, Betegao Boisar(E)
+                                        401501,Palghar, MH</span>
+                                </a>
                             </div>
                         </div>
                         <div class="contact-info-item style-two">
