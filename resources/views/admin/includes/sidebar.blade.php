@@ -11,6 +11,7 @@
             <img src="{{ asset('user-assets/images/logos/favicon.png') }}" class="header-brand-img darkmobile-logo"
                 alt="Maestloper Media">
         </a>
+       
     </div>
 
     <ul class="side-menu app-sidebar3">
