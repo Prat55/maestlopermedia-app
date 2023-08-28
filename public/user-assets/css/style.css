@@ -14087,3 +14087,10 @@ ul {
         flex-direction: column;
     }
 }
+
+
+.main
+{
+    border: 5px solid;
+  border-image: linear-gradient(45deg, purple, orange) 1;
+}
