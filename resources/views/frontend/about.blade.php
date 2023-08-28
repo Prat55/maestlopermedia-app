@@ -93,12 +93,6 @@
     </section>
     <!-- What We Do Two Area end -->
 
-
-
-
-
-
-
     {{-- Owner Inforrmation Start --}}
 
     <section class="text-gray-600 body-font d-flex justify-content-center">
@@ -108,7 +102,6 @@
                     <img src="{{ asset('user-assets/images/about/swastik sir.jpg') }}" alt="">
                 </div>
                 <div class="content">
-                    <!-- <p>rajesh pawar</p> -->
                     <h4>Swastik Nitin Lokhande</h4>
                     <label for="">Email: </label>
                     <a href="mailto:info@maestlopermedia.com" id="email">info@maestlopermedia.com</a><br>
@@ -227,11 +220,6 @@
 
 
     {{-- Owner Inforrmation End --}}
-
-
-
-
-
 
     <!-- Statistics Four Area start -->
     <div class="statistics-area-four rel z-1">
