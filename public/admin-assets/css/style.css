@@ -17164,7 +17164,7 @@ ul.recent-activity {
     height: 100%;
     content: '';
     position: absolute;
-    background-color: rgba(102, 77, 201, 0.8);
+    background-color: #fff0;
     left: 0;
     right: 0;
     top: 0;
@@ -52452,3 +52452,9 @@ Dimmer
     text-transform: uppercase;
 }
 
+.alert-message {
+    position: absolute;
+    top: -5%;
+    right: 0;
+    z-index: 100;
+}   

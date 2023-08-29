@@ -48,7 +48,7 @@
 
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-label">Service Type <span class="text-red">*</span></label>
+                                    <label class="form-label">Service<span class="text-red">*</span></label>
                                     <select required="" name="service" class="form-control custom-select select2">
                                         <option value="">--Select Service--</option>
                                         @foreach ($services as $se)

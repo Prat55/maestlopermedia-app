@@ -22,7 +22,9 @@ class AdminServiceController extends Controller
     {
         $service = new Service([
             "service" => $request->service,
-            "slug" => $request->slug,
+            "slug" => str_replace(' ', '-', strtolower(
+                $request->service
+            )),
         ]);
         $service->save();
 

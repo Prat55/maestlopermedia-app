@@ -6,6 +6,9 @@
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">All Posts</h4>
         </div>
+        <div class="col-md-6 alert-message">
+            @include('admin.message')
+        </div>  
     </div>
     <!--End Page header-->
 

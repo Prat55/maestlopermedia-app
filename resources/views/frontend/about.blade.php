@@ -102,12 +102,12 @@
                     <img src="{{ asset('user-assets/images/about/swastik sir.jpg') }}" alt="">
                 </div>
                 <div class="content">
-                    <h4>Swastik Nitin Lokhande</h4>
+                    <h4>Swastik Nitin Lokhande</h4><br>
                     <label for="">Email: </label>
                     <a href="mailto:info@maestlopermedia.com" id="email">info@maestlopermedia.com</a><br>
                     <label for="">Phone: </label>
                     <a href="tel:+91 8149972219"> +918149972219</a>
-                    <ul class="ms-lg-1">
+                    <ul class="ms-lg-1 social-links">
                         <li><a href="https://in.linkedin.com/company/maestloper-media">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px"
                                     viewBox="0 0 333333 333333" shape-rendering="geometricPrecision"

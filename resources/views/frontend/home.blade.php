@@ -583,8 +583,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-6">
-                    @include('admin.message')
+                <div class="col-xl-5 col-lg-6" id="contact">
+                    <div class="col-md-12">
+                        @include('admin.message')
+                    </div>
                     <form id="contact-area-form" class="contact-area-form text-center wow fadeInRight delay-0-2s"
                         name="contact-area-form" action="/submit" method="post">
                         @csrf
@@ -597,7 +599,8 @@
                             placeholder="Website" />
                         <input type="number" id="phone" name="phone" class="form-control" value=""
                             placeholder="Phone Number" />
-                        <select name="select_req" id="select-subject" class="form-control" value="" required>
+                        <select name="select_req" id="select-subject form-s" class="form-control " value=""
+                            required>
                             <option value="">
                                 Select Service
                             </option>

@@ -24,6 +24,9 @@
                 </div>
             </div>
         </div> --}}
+        <div class="col-md-5 alert-message">
+            @include('admin.message')
+        </div>
     </div>
     <!--End Page header-->
 

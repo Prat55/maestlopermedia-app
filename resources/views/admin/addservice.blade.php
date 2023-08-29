@@ -6,6 +6,9 @@
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">Add Services</h4>
         </div>
+        <div class="col-md-5 alert-message">
+            @include('admin.message')
+        </div>
     </div>
     <!--End Page header-->
 
@@ -21,9 +24,6 @@
                         @csrf
                         <input type="text" name="service" id="name" value="" class="form-control m-2"
                             placeholder="Enter Service Name" required>
-
-                        <input type="text" name="slug" id="slug" value="" class="form-control m-2 slug"
-                            placeholder="Slug" readonly>
 
                         <button type="submit" class="btn btn-success mt-3">Submit</button>
                     </form>

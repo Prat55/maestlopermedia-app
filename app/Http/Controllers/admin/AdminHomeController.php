@@ -6,10 +6,12 @@ use App\Http\Controllers\Controller;
 use App\Models\Form;
 use App\Models\Post;
 use App\Models\Service;
+use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Hash;
 
 class AdminHomeController extends Controller
 {
@@ -21,6 +23,11 @@ class AdminHomeController extends Controller
         $messages = Form::all();
         $mytime = Carbon::now()->format('Y-m-d');
         return view('admin.dashboard', compact('posts', 'services', 'forms', 'messages', 'mytime'));
+    }
+
+    protected function profile()
+    {
+        return view('admin.profile');
     }
 
     protected function allposts()
@@ -41,7 +48,7 @@ class AdminHomeController extends Controller
         return view('admin.form')->with('forms', $forms);
     }
 
-    public function message($id)
+    protected function message($id)
     {
         $forms = Form::findOrFail($id);
         return view('admin.formmessage')->with('forms', $forms);
@@ -54,14 +61,14 @@ class AdminHomeController extends Controller
         return view('admin.addpost')->with('posts', $posts)->with('services', $services);
     }
 
-    public function editpost($id)
+    protected function editpost($id)
     {
         $posts = Post::findOrFail($id);
         $services = Service::all();
         return view('admin.editpost')->with('posts', $posts)->with('services', $services);
     }
 
-    public function store(Request $request)
+    protected function store(Request $request)
     {
         if ($request->hasFile("media")) {
             $file = $request->file("media");
@@ -80,7 +87,34 @@ class AdminHomeController extends Controller
         return redirect("/admin/all-posts");
     }
 
-    public function update(Request $request, $id)
+    protected function update_profile(Request $request, $id)
+    {
+        $user = User::findOrFail($id);
+
+        if ($request->hasFile("profile_img")) {
+            if ($user->profile_img != '12.jpg') {
+                if (file::exists("profile/" . $user->profile_img)) {
+                    File::delete("profile/" . $user->profile_img);
+                }
+            }
+
+            $file = $request->file("profile_img");
+            $user->profile_img = time() . "_" . $file->getClientOriginalName();
+            $file->move(\public_path("/profile"), $user->profile_img);
+            $request['profile_img'] = $user->profile_img;
+        }
+
+        $user->update([
+            "profile_img" => $user->profile_img,
+            "name" => $user->name,
+            "email" => $request->email,
+            "password" => Hash::make($request->password),
+        ]);
+
+        return redirect("/admin/profile")->with('success', 'Profile updated successfully');
+    }
+
+    protected function update(Request $request, $id)
     {
         $post = Post::findOrFail($id);
         if ($request->hasFile("media")) {
@@ -103,7 +137,7 @@ class AdminHomeController extends Controller
         return redirect("/admin/all-posts");
     }
 
-    public function destroy($id)
+    protected function destroy($id)
     {
         $posts = Post::findOrFail($id);
 
@@ -112,6 +146,19 @@ class AdminHomeController extends Controller
         }
         $posts->delete();
         return back();
+    }
+
+    protected function d_form($id)
+    {
+        $forms = Form::findOrFail($id);
+        $forms->delete();
+        return back()->with('success', 'Deleted successfully');
+    }
+
+    protected function all_d_form()
+    {
+        $forms = Form::truncate();
+        return back()->with('success', 'All messages deleted successfully');
     }
 
     public function logout()

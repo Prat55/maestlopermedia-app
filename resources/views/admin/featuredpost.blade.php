@@ -6,6 +6,9 @@
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">All Featured Posts</h4>
         </div>
+        <div class="col-md-5 alert-message">
+            @include('admin.message')
+        </div>
     </div>
     <!--End Page header-->
 

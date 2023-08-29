@@ -51,6 +51,8 @@ Route::group(['prefix' => 'admin'], function () {
         // *Form Routes
         Route::get('/inbox', [AdminHomeController::class, 'form'])->name('form');
         Route::get('/message/{id}', [AdminHomeController::class, 'message']);
+        Route::delete('/f-delete/{id}', [AdminHomeController::class, 'd_form']);
+        Route::delete('/all-delete', [AdminHomeController::class, 'all_d_form']);
 
 
         //* Posts CRUD Route
@@ -59,19 +61,9 @@ Route::group(['prefix' => 'admin'], function () {
         Route::put('/update/{id}', [AdminHomeController::class, 'update']);
         Route::delete('/delete/{id}', [AdminHomeController::class, 'destroy']);
 
-        // * This is for auto slug generator
-        Route::get('/getSlug', function (Request $request) {
-
-            $slug = '';
-            if (!empty($request->title)) {
-                $slug = Str::slug($request->title);
-            }
-
-            return response()->json([
-                'status' => true,
-                'slug' => $slug,
-            ]);
-        })->name('getSlug');
+        // ? Profile Routes
+        Route::get('/profile', [AdminHomeController::class, 'profile'])->name('admin.profile');
+        Route::put('/update-profile/{id}', [AdminHomeController::class, 'update_profile']);
 
         // * Service CRUD Routes
         Route::post('/add-service', [AdminServiceController::class, 'store']);

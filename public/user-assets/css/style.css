@@ -14003,7 +14003,7 @@ input.whats-input[type=text]:focus {
 .main {
     width: 55%;
     border: 1px solid black;
-    padding: 5% 5%;
+    padding: 3% 3%;
     border-radius: 20px;
     margin-bottom: 30px;
 }
@@ -14016,15 +14016,16 @@ input.whats-input[type=text]:focus {
     border-bottom: 1px solid #666;
 }
 
-ul {
+.social-links {
     display: flex;
     gap: 15px;
+    justify-content: start;
+    align-items: center;
     list-style: none;
-    margin-left: -42px;
 }
 
 .img {
-    width: 500px;
+    width: 50%;
     height: 200px;
     /* border:1px solid black; */
     display: flex;
@@ -14041,7 +14042,7 @@ ul {
 }
 
 .content {
-    width: 70%;
+    width: 50%;
     /* border: 1px solid black; */
     ;
 }
@@ -14058,39 +14059,61 @@ ul {
     /* border:1px solid black; */
 }
 
-@media screen and (max-width:470px) {
+@media only screen and (max-width: 480px) {
     .one {
         flex-direction: column;
-
-
     }
 
     .content {
-
-        /* background-color: red; */
         width: 100%;
-        ;
         margin-top: -20px;
     }
 
-    .img {
-        width: 80%;
-        margin-left: 30px;
+    .main {
+        width: 100%;
+        margin: 0 20px 50px 20px;
     }
-
 
 }
 
-@media screen and (max-width:800px) {
+@media only screen and (max-width: 1100px) {
+    .one {
+        flex-wrap: wrap;
+    }
 
+    .img {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 991px) {
+    .main {
+        width: 100%;
+        margin: 0 50px 50px 50px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
     .one {
         flex-direction: column;
     }
+
+    .content {
+        width: 100%;
+        margin-top: -20px;
+    }
+
+    .main {
+        width: 100%;
+        margin: 0 !important;
+    }
 }
 
-
-.main
-{
+.main {
     border: 5px solid;
-  border-image: linear-gradient(45deg, purple, orange) 1;
+    border-image: linear-gradient(45deg, purple, orange) 1;
 }
