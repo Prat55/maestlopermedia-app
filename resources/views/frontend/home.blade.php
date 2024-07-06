@@ -20,8 +20,7 @@
                     </div>
                 </div>
                 <div class="slider-video"
-                    style="background-image: url('{{ asset('user-assets/myimages/services-img/7.jpg') }}');
-                    width:731px;height:580px">
+                    style="background-image: url('{{ asset('user-assets/myimages/services-img/7.jpg') }}');">
                     <span class="video-title cd-headline clip">
                         <span class="cd-words-wrapper">
                             <b class="is-visible">Web Designing</b>
@@ -44,7 +43,7 @@
                     </div>
                 </div>
                 <div class="slider-video"
-                    style="background-image: url('{{ asset('user-assets/images/slider/slide1.jpg') }}');width:731px;height:580px">
+                    style="background-image: url('{{ asset('user-assets/images/slider/slide1.jpg') }}');">
                     <span class="video-title cd-headline clip">
                         <span class="cd-words-wrapper">
                             <b class="is-visible">Graphics</b>
@@ -67,7 +66,10 @@
                     </div>
                 </div>
                 <div class="slider-video"
-                    style="background-image: url('{{ asset('user-assets/myimages/services-img/2.jpg') }}');width:731px;height:580px">
+                    style="background-image: url('{{ asset('user-assets/myimages/services-img/2.jpg') }}');
+
+
+                    ">
                     <span class="video-title cd-headline clip">
                         <span class="cd-words-wrapper">
                             <b class="is-visible">Digital</b>

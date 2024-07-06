@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('forms', function (Blueprint $table) {
-            $table->text('links')->after('message')->default('javascript:void(0);');
+            $table->string('links')->after('message')->default('javascript:void(0);');
         });
     }
 
